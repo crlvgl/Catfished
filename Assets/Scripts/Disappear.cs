@@ -23,17 +23,17 @@ public class Disappear : MonoBehaviour
     {
         if (other.gameObject == player)
         {
+            // Debug.Log("Entered");
             renderer.enabled = false;
         }
-        Debug.Log("Entered");
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.gameObject == player)
         {
+            // Debug.Log("Exited");
             renderer.enabled = true;
         }
-        Debug.Log("Exited");
     }
 }

@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour
     Rigidbody2D body;
 
     float horizontal;
+    float vertical;
     bool jump;
     bool open;
     bool close;
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        vertical = Input.GetAxisRaw("Vertical");
         // if (Input.GetKeyDown("space"))
         // {
         //     jump = true;
@@ -44,7 +46,14 @@ public class PlayerMovement : MonoBehaviour
         //     body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         //     jump = false;
         // }
-        body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+        if (Ladder.isOnLadder == false)
+        {
+            body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+        }
+        else
+        {
+            body.linearVelocity = new Vector2(horizontal * speed, vertical * speed);
+        }
         if (open)
         {
             window.SetActive(true);

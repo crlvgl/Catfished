@@ -5,6 +5,7 @@ public class ParallaxEffect : MonoBehaviour
     public float parallaxEffect;
     public Camera cam;
     private float startpos;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
