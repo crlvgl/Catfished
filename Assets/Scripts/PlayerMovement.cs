@@ -6,9 +6,12 @@ public class PlayerMovement : MonoBehaviour
 
     float horizontal;
     bool jump;
+    bool open;
+    bool close;
 
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
+    public GameObject window;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -24,6 +27,14 @@ public class PlayerMovement : MonoBehaviour
         // {
         //     jump = true;
         // }
+        if (Input.GetKeyDown("e"))
+        {
+            open = true;
+        }
+        if (Input.GetKeyDown("escape"))
+        {
+            close = true;
+        }
     }
 
     void FixedUpdate()
@@ -34,5 +45,15 @@ public class PlayerMovement : MonoBehaviour
         //     jump = false;
         // }
         body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+        if (open)
+        {
+            window.SetActive(true);
+            open = false;
+        }
+        if (close)
+        {
+            window.SetActive(false);
+            close = false;
+        }
     }
 }
