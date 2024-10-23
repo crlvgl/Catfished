@@ -11,11 +11,13 @@ public class Timer : MonoBehaviour
     private bool isFinished = false;
     private float finalHealth;
     GameObject player;
+    GameObject[] spawners;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         player = GameObject.Find("Player");
+        spawners = GameObject.FindGameObjectsWithTag("Spawner");
     }
 
     // Update is called once per frame
@@ -44,7 +46,12 @@ public class Timer : MonoBehaviour
         {
             if (!isFinished)
             {
-                int score = (int)(elapsedTime * elapsedTime);
+                float bonus = 0f;
+                foreach (GameObject spawner in spawners)
+                {
+                    bonus += spawner.GetComponent<ProjectileSpawner>().fireRate;
+                }
+                int score = (int)(elapsedTime * elapsedTime * bonus * bonus);
                 if (elapsedTime < time)
                 {
                     finalTimeText.text = "Game Over!\n" + timerText.text + "\nScore: " + score.ToString();
