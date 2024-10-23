@@ -3,7 +3,7 @@ using UnityEngine;
 public class MoveEnemies : MonoBehaviour
 {
     public float speed = 5.0f;
-    private bool moveRight = true;
+    public bool moveRight = true;
     public float moveDown = 1.0f;
     private bool moveDownBool = true;
     public float screenWidth = 23.0f;

@@ -22,6 +22,7 @@ public class Bullet : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
+            TimerScore.score += 36 * PlayerHealth.health;
             Destroy(this.gameObject);
         }
 
