@@ -25,7 +25,7 @@ public class ParallaxEffect : MonoBehaviour
         {
             Vector3 camPos = cam.transform.position;
             distance = camPos.x * parallaxEffect;
-            Debug.Log(this.gameObject.name);
+            // Debug.Log(this.gameObject.name);
         }
         else if (parallaxEffect > 1)
         {
