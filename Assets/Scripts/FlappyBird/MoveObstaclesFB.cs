@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class MoveObstaclesFB : MonoBehaviour
 {
+    public float backgroundSlowdown = 0f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +17,6 @@ public class MoveObstaclesFB : MonoBehaviour
         {
             return;
         }
-        this.transform.position += Vector3.left * ScoreFB.speed * Time.deltaTime;
+        this.transform.position += Vector3.left * (ScoreFB.speed - backgroundSlowdown) * Time.deltaTime;
     }
 }

@@ -25,7 +25,7 @@ public class MovementFB : MonoBehaviour
     {
         if (jump)
         {
-            body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+            body.AddForce(Vector2.up * jumpForce * (ScoreFB.speed / 5f), ForceMode2D.Impulse);
             jump = false;
         }
     }

@@ -19,11 +19,15 @@ public class ScoreFB : MonoBehaviour
     public int stepSize = 2;
     public float speedIncrease = 0.03f;
     private bool increaseSpeed = true;
+    private float gravity;
+    public GameObject player;
+    private Rigidbody2D playerBody;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        playerBody = player.GetComponent<Rigidbody2D>();
+        gravity = playerBody.gravityScale;
     }
 
     // Update is called once per frame
@@ -58,6 +62,7 @@ public class ScoreFB : MonoBehaviour
             if (score % stepSize == 0 && speed < speed * maxSpeedModifier && increaseSpeed)
             {
                 speed += speedIncrease;
+                playerBody.gravityScale = gravity * (speed / 5f);
                 Debug.Log("Speed: " + speed);
                 increaseSpeed = false;
             }
