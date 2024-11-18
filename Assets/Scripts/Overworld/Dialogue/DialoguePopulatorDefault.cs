@@ -14,32 +14,18 @@ public class DialoguePopulatorDefault : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
-    }
-
-    void Awake()
-    {
+        // Debug.Log("DialoguePopulatorDefault is awake through start");
         if (!multipleDefault)
         {
             this.gameObject.GetComponent<DialogueHandler>().dialogue = dialogue;
         }
-    }
-
-    void OnEnable()
-    {
-        if (!multipleDefault)
+        else if (multipleDefault)
         {
-            this.gameObject.GetComponent<DialogueHandler>().dialogue = dialogue;
-        }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (multipleDefault)
-        {
+            // Debug.Log(this.gameObject.GetComponent<DialogueHandler>().trigger);
+            // Debug.Log("Multiple default dialogues are present");
             if (!copied && this.gameObject.GetComponent<DialogueHandler>().trigger == trigger)
             {
+                // Debug.Log("Dialogue copied");
                 this.gameObject.GetComponent<DialogueHandler>().dialogue = dialogue;
                 copied = true;
             }
@@ -48,5 +34,39 @@ public class DialoguePopulatorDefault : MonoBehaviour
                 copied = false;
             }
         }
+    }
+
+    void Awake()
+    {
+
+    }
+
+    void OnEnable()
+    {
+        // Debug.Log("DialoguePopulatorDefault is awake");
+        if (!multipleDefault)
+        {
+            this.gameObject.GetComponent<DialogueHandler>().dialogue = dialogue;
+        }
+        else if (multipleDefault)
+        {
+            // Debug.Log(this.gameObject.GetComponent<DialogueHandler>().trigger);
+            // Debug.Log("Multiple default dialogues are present");
+            if (!copied && this.gameObject.GetComponent<DialogueHandler>().trigger == trigger)
+            {
+                // Debug.Log("Dialogue copied");
+                this.gameObject.GetComponent<DialogueHandler>().dialogue = dialogue;
+                copied = true;
+            }
+            else if(copied && this.gameObject.GetComponent<DialogueHandler>().trigger != trigger)
+            {
+                copied = false;
+            }
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
     }
 }

@@ -21,7 +21,7 @@ public class InitiateDialogue : MonoBehaviour
             {
                 if (!dialogue.activeSelf)
                 {
-                    Debug.Log("Dialogue initiated");
+                    // Debug.Log("Dialogue initiated");
                     dialogue.SetActive(true);
                 }
                 else if (dialogue.activeSelf)
@@ -36,7 +36,7 @@ public class InitiateDialogue : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            Debug.Log("Player is in range");
+            // Debug.Log("Player is in range");
             inRange = true;
         }
     }
@@ -45,7 +45,7 @@ public class InitiateDialogue : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            Debug.Log("Player is out of range");
+            // Debug.Log("Player is out of range");
             inRange = false;
             dialogue.SetActive(false);
         }
