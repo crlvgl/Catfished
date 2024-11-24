@@ -83,6 +83,8 @@ public class DialogueHandler : MonoBehaviour
                     // Debug.Log("Trigger is " + trigger);
                 }
             }
+            // Debug.Log(trigger);
+            // Debug.Log("Dialogue ended");
             this.gameObject.SetActive(false);
             return;
         }

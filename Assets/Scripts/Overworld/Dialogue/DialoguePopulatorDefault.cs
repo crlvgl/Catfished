@@ -21,7 +21,8 @@ public class DialoguePopulatorDefault : MonoBehaviour
         }
         else if (multipleDefault)
         {
-            // Debug.Log(this.gameObject.GetComponent<DialogueHandler>().trigger);
+            // Debug.Log(this.gameObject.GetComponent<DialogueHandler>().trigger == trigger);
+            // Debug.Log("copied is " + copied);
             // Debug.Log("Multiple default dialogues are present");
             if (!copied && this.gameObject.GetComponent<DialogueHandler>().trigger == trigger)
             {
@@ -34,6 +35,7 @@ public class DialoguePopulatorDefault : MonoBehaviour
                 copied = false;
             }
         }
+        // this.gameObject.SetActive(false);
     }
 
     void Awake()
@@ -51,6 +53,7 @@ public class DialoguePopulatorDefault : MonoBehaviour
         else if (multipleDefault)
         {
             // Debug.Log(this.gameObject.GetComponent<DialogueHandler>().trigger);
+            // Debug.Log("copied is " + copied);
             // Debug.Log("Multiple default dialogues are present");
             if (!copied && this.gameObject.GetComponent<DialogueHandler>().trigger == trigger)
             {

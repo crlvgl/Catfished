@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class InitiateDialogue : MonoBehaviour
 {
@@ -9,7 +10,14 @@ public class InitiateDialogue : MonoBehaviour
     void Start()
     {
         dialogue = this.transform.Find("DialogueHandler").gameObject;
-        dialogue.SetActive(false);
+        if (dialogue.GetComponent<DialogueHandler>().hasMultiple)
+        {
+            StartCoroutine(CloseAfterTime());
+        }
+        else
+        {
+            dialogue.SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -19,6 +27,7 @@ public class InitiateDialogue : MonoBehaviour
         {
             if (Input.GetKeyDown(button))
             {
+                // Debug.Log("Dialogue initiated");
                 if (!dialogue.activeSelf)
                 {
                     // Debug.Log("Dialogue initiated");
@@ -49,5 +58,11 @@ public class InitiateDialogue : MonoBehaviour
             inRange = false;
             dialogue.SetActive(false);
         }
+    }
+
+    IEnumerator CloseAfterTime()
+    {
+        yield return new WaitForSeconds(1);
+        dialogue.SetActive(false);
     }
 }

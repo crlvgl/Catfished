@@ -73,7 +73,7 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -86,7 +86,7 @@ ScriptedImporter:
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638680636500424232
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,9 +122,51 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Frame_0
+  - name: Layer 4 - Merged_Frame_0
     originalName: 
-    pivot: {x: 0.51903117, y: 0}
+    pivot: {x: 0.92307705, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 68
+      width: 39
+      height: 159
+    spriteID: fcadadd4bf716a94688fa6cc17026d0e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -120, y: 68}
+  - name: Layer 4 - Merged_Frame_1
+    originalName: 
+    pivot: {x: 0.92307705, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 68
+      width: 39
+      height: 159
+    spriteID: d88521c2a7400814aa4f9cd65bc80928
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -73, y: 68}
+  - name: Layer 7_Frame_0
+    originalName: 
+    pivot: {x: 0.51903117, y: -2.7916665}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,8 +175,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 289
-      height: 159
-    spriteID: 8184ac2bfad134e489b0879a8b94d575
+      height: 24
+    spriteID: a08524a0bff13de428b17fc688479c58
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +184,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -6, y: 4}
-  - name: Frame_1
+    uvTransform: {x: -6, y: -63}
+  - name: Layer 7_Frame_1
     originalName: 
-    pivot: {x: 0.51903117, y: 0}
+    pivot: {x: 0.51903117, y: -2.7916665}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 171
+      y: 36
       width: 289
-      height: 159
-    spriteID: de389030b07925f4198d6d0f14d35685
+      height: 24
+    spriteID: cd9396dcc7333ce499e354e211418d4b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,17 +205,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -6, y: 171}
+    uvTransform: {x: -6, y: -31}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -1357841103
-    name: Flappy_bird_assets_animation
-    layerFlags: 0
+    guid: 58246484
+    name: Layer 4 - Merged
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Frame_0
+    - name: Layer 4 - Merged_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -181,8 +223,8 @@ ScriptedImporter:
         y: 0
         width: 320
         height: 180
-      spriteId: 8184ac2bfad134e489b0879a8b94d575
-    - name: Frame_1
+      spriteId: fcadadd4bf716a94688fa6cc17026d0e
+    - name: Layer 4 - Merged_Frame_1
       frameIndex: 1
       additiveSortOrder: 0
       cellRect:
@@ -190,7 +232,34 @@ ScriptedImporter:
         y: 0
         width: 320
         height: 180
-      spriteId: de389030b07925f4198d6d0f14d35685
+      spriteId: d88521c2a7400814aa4f9cd65bc80928
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: 1317223539
+    name: Layer 7
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 7_Frame_0
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: a08524a0bff13de428b17fc688479c58
+    - name: Layer 7_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 180
+      spriteId: cd9396dcc7333ce499e354e211418d4b
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -201,6 +270,42 @@ ScriptedImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Windows Store Apps
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
