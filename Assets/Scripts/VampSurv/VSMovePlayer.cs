@@ -14,6 +14,16 @@ public class VSMovePlayer : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
     }
 
+    void OnEnable()
+    {
+        VSPlayerHealthXp.OnPlayerDeath += OnPlayerDeath;
+    }
+
+    void OnDisable()
+    {
+        VSPlayerHealthXp.OnPlayerDeath -= OnPlayerDeath;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -31,5 +41,10 @@ public class VSMovePlayer : MonoBehaviour
         {
             body.linearVelocity = new Vector2(horizontal * speed, vertical * speed) * dampener;
         }
+    }
+
+    void OnPlayerDeath()
+    {
+        this.enabled = false;
     }
 }

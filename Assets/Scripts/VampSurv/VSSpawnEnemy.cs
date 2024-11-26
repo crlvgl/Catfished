@@ -14,6 +14,16 @@ public class VSSpawnEnemy : MonoBehaviour
         StartCoroutine(SpawnEnemy());
     }
 
+    void OnEnable()
+    {
+        VSPlayerHealthXp.OnPlayerDeath += OnPlayerDeath;
+    }
+
+    void OnDisable()
+    {
+        VSPlayerHealthXp.OnPlayerDeath -= OnPlayerDeath;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -36,5 +46,10 @@ public class VSSpawnEnemy : MonoBehaviour
             Instantiate(enemy, transform.position, Quaternion.identity);
         }
         StartCoroutine(SpawnEnemy());
+    }
+
+    void OnPlayerDeath()
+    {
+        this.enabled = false;
     }
 }
