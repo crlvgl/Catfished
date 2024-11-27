@@ -11,7 +11,7 @@ public class VSSpawnEnemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(SpawnEnemy());
+        StartCoroutine(SpawnEnemyFirst());
     }
 
     void OnEnable()
@@ -45,6 +45,13 @@ public class VSSpawnEnemy : MonoBehaviour
         {
             Instantiate(enemy, transform.position, Quaternion.identity);
         }
+        StartCoroutine(SpawnEnemy());
+    }
+
+    IEnumerator SpawnEnemyFirst()
+    {
+        yield return new WaitForSeconds(timeBetweenSpawns/10);
+        Instantiate(enemy, transform.position, Quaternion.identity);
         StartCoroutine(SpawnEnemy());
     }
 

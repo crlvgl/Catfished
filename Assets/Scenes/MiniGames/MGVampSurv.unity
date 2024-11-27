@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &95352679
@@ -406,7 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &96727483
@@ -510,7 +510,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &161519512
@@ -614,7 +614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &198345063
@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &250048760
@@ -909,7 +909,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &256663464
@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &269102751
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &272056833
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &287890923
@@ -1363,7 +1363,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &293306189
@@ -1467,7 +1467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &295276899
@@ -1571,7 +1571,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &362297993
@@ -1675,7 +1675,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &435266200
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &448948412
@@ -2092,7 +2092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &499987164
@@ -2196,7 +2196,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &506158919
@@ -2300,7 +2300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &526243228
@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &604616707
@@ -2508,7 +2508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &659782766
@@ -2612,7 +2612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &677675590
@@ -2800,7 +2800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &765752236
@@ -2904,7 +2904,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &819576557
@@ -3182,7 +3182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1088431495
@@ -3373,7 +3373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1112077027
@@ -3477,7 +3477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1144444694
@@ -3581,7 +3581,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1160612371
@@ -3859,7 +3859,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1286925617
@@ -3963,7 +3963,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1397112578
@@ -4154,7 +4154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1484864774
@@ -4258,7 +4258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1492895579
@@ -4362,7 +4362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1516954646
@@ -4466,7 +4466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1525768675
@@ -4570,7 +4570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1539930907
@@ -4674,7 +4674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1639421102
@@ -4900,7 +4900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1712583970
@@ -5039,7 +5039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1817684924
@@ -5143,7 +5143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1832522387
@@ -5247,7 +5247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1870514334
@@ -5351,7 +5351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1 &1892799777
@@ -5653,7 +5653,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 7739956904342343753, guid: 6ab913235e7993a4ea3537e369407170, type: 3}
-  timeBetweenSpawns: 10
+  timeBetweenSpawns: 30
   spawnGroupSize: 5
   groupProbability: 0.07
 --- !u!1660057539 &9223372036854775807

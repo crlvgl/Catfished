@@ -22,11 +22,8 @@ public class VSPlayerHealthXp: MonoBehaviour
             Debug.Log("Player is dead");
             Die();
         }
-        if (playerXp >= playerLevels[0])
-        {
-            Debug.Log("Player leveled up");
-            playerLevels = RemoveFirstElement(playerLevels);
-        }
+
+        LevelUp();
     }
 
     int[] RemoveFirstElement(int[] array)
@@ -41,5 +38,18 @@ public class VSPlayerHealthXp: MonoBehaviour
         OnPlayerDeath?.Invoke(); // Notify all listeners that the player has died
 
         Destroy(this.gameObject);
+    }
+
+    void LevelUp()
+    {
+        if (playerLevels.Length == 0)
+        {
+            return;
+        }
+        else if (playerXp >= playerLevels[0])
+        {
+            Debug.Log("Player leveled up");
+            playerLevels = RemoveFirstElement(playerLevels);
+        }
     }
 }

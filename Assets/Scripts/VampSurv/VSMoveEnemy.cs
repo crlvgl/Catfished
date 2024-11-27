@@ -66,7 +66,7 @@ public class VSMoveEnemy : MonoBehaviour
         // Health
         if (health <= 0)
         {
-            Debug.Log("Enemy is dead");
+            // Debug.Log("Enemy is dead");
             Instantiate(xpItem, transform.position, Quaternion.identity);
             Destroy(this.gameObject);
         }
@@ -82,7 +82,7 @@ public class VSMoveEnemy : MonoBehaviour
     {
         if (collision.gameObject.name == "Player")
         {
-            Debug.Log("Player takes damage");
+            // Debug.Log("Player takes damage");
             player.GetComponent<VSPlayerHealthXp>().health -= damage;
         }
     }
