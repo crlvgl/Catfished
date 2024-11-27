@@ -878,6 +878,7 @@ MonoBehaviour:
   birdInFront: {fileID: 955026037471543973, guid: d90b57422dc8d764d91d86c47683bbaa, type: 3}
   spawnRate: 2
   difficulty2: 20
+  spawnBirds: 0
 --- !u!4 &807356871
 Transform:
   m_ObjectHideFlags: 0
@@ -925,10 +926,10 @@ MonoBehaviour:
   scoreText: {fileID: 1248481162}
   timerText: {fileID: 767683190}
   gameOverText: {fileID: 1337581536}
-  difficulty2: 10
-  maxSpeedModifier: 4
+  difficulty2: 7
+  maxSpeedModifier: 8
   stepSize: 2
-  speedIncrease: 0.05
+  speedIncrease: 0.15
   player: {fileID: 1611899359}
 --- !u!4 &827930425
 Transform:

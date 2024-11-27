@@ -18,6 +18,7 @@ public class SpawnObstacleFB : MonoBehaviour
     public GameObject birdInFront;
     public float spawnRate = 2f;
     public int difficulty2 = 40;
+    public bool spawnBirds = true;
     private int random;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -38,13 +39,20 @@ public class SpawnObstacleFB : MonoBehaviour
         if (!ScoreFB.gameOver)
         {
             yield return new WaitForSeconds(spawnRate/ScoreFB.speed);
-            if (ScoreFB.score > difficulty2)
+            if (spawnBirds)
             {
-                random = Random.Range(0, 8);
+                if (ScoreFB.score > difficulty2)
+                {
+                    random = Random.Range(0, 8);
+                }
+                else
+                {
+                    random = Random.Range(0, 6);
+                }
             }
             else
             {
-                random = Random.Range(0, 6);
+                random = 1;
             }
             if (random == 4)
             {
