@@ -3,7 +3,15 @@ using System.Collections;
 
 public class SpawnObstacleFB : MonoBehaviour
 {
-    public GameObject pipePrefab;
+    public GameObject pipePrefab1;
+    public GameObject pipePrefab2;
+    public GameObject pipePrefab3;
+    public GameObject pipePrefab4;
+    public GameObject pipePrefab5;
+    public GameObject pipePrefab6;
+    public GameObject pipePrefab7;
+    public GameObject pipePrefab8;
+    public GameObject pipePrefab9;
     public GameObject birdAbove;
     public GameObject birdBelow;
     public GameObject birdBehind;
@@ -56,7 +64,43 @@ public class SpawnObstacleFB : MonoBehaviour
             }
             else
             {
-                Instantiate(pipePrefab, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                int randomPipe = Random.Range(0, 9);
+                if (randomPipe == 0)
+                {
+                    Instantiate(pipePrefab1, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else if (randomPipe == 1)
+                {
+                    Instantiate(pipePrefab2, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else if (randomPipe == 2)
+                {
+                    Instantiate(pipePrefab3, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else if (randomPipe == 3)
+                {
+                    Instantiate(pipePrefab4, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else if (randomPipe == 4)
+                {
+                    Instantiate(pipePrefab5, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else if (randomPipe == 5)
+                {
+                    Instantiate(pipePrefab6, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else if (randomPipe == 6)
+                {
+                    Instantiate(pipePrefab7, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else if (randomPipe == 7)
+                {
+                    Instantiate(pipePrefab8, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
+                else
+                {
+                    Instantiate(pipePrefab9, new Vector3(this.transform.position.x, Random.Range(-3f, 3f), 0), Quaternion.identity);
+                }
             }
             StartCoroutine(SpawnObstacle());
         }
