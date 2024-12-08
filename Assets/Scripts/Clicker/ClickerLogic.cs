@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 public class ClickerLogic : MonoBehaviour {
@@ -27,9 +28,9 @@ public class ClickerLogic : MonoBehaviour {
         if (remainingTime > 0) {
             remainingTime -= Time.deltaTime;
         }
-        else if (remainingTime < 0) {
+        else if (remainingTime <= 0) {
             remainingTime = 0;
-            // GameOver();
+            GameOver();
             timerText.color = Color.red;
         }
         int minutes = Mathf.FloorToInt(remainingTime / 60);
@@ -40,6 +41,18 @@ public class ClickerLogic : MonoBehaviour {
             // Space pressed!
             spaceCount++;
             OnSpacePressed?.Invoke(this, new OnSpacePressedEventArgs { spaceCount = spaceCount });
+        }
+        
+    }
+
+    private void GameOver() {
+        if (spaceCount >= 60) {
+            // Replace with reward display and exit to overworld
+            SceneManager.LoadScene(0);
+        }
+        else if (spaceCount < 60) {
+            // Exit game to overworld without reward
+            SceneManager.LoadScene(0);
         }
     }
 }
