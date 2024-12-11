@@ -1,0 +1,518 @@
+fileFormatVersion: 2
+guid: 9e4f44af8d59c5442a360dde0f879527
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 0
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 0
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638695552342150425
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Back
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 320
+      height: 410
+    spriteID: a676be611cddbf94a9a07853ff84ed20
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Exit
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 4
+      width: 65
+      height: 49
+    spriteID: 09694ae38b791de4abe87da03fa53a1d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 4}
+  - name: Endless
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 61
+      width: 65
+      height: 49
+    spriteID: 818c0857aea640d4cbde07db077f76ee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 61}
+  - name: New G
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 118
+      width: 65
+      height: 49
+    spriteID: 15d72a0558a92614e9893c4a5c58b748
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 118}
+  - name: Load
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 175
+      width: 65
+      height: 49
+    spriteID: b543a616e2b018b4eaefba3cb1c3724a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 175}
+  - name: New G White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 422
+      width: 67
+      height: 51
+    spriteID: 20e09406a7cb9af49b578c3408054dff
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 422}
+  - name: Exit White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 79
+      y: 422
+      width: 67
+      height: 51
+    spriteID: 73869041db6833c4c9a5271fe937660c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 79, y: 422}
+  - name: Endless White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 154
+      y: 422
+      width: 67
+      height: 51
+    spriteID: b1f3080158f7c2147ab21dd2f2d0801f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 154, y: 422}
+  - name: Load White
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 229
+      y: 422
+      width: 67
+      height: 51
+    spriteID: bf65fedbfabf79d49a229d9a147b09dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 229, y: 422}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -718866205
+    name: Back
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Back
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: a676be611cddbf94a9a07853ff84ed20
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: -306074849
+    name: Exit
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Exit
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 240
+        y: 68
+        width: 65
+        height: 49
+      spriteId: 09694ae38b791de4abe87da03fa53a1d
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: 1248212508
+    name: Endless
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Endless
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 162
+        y: 68
+        width: 65
+        height: 49
+      spriteId: 818c0857aea640d4cbde07db077f76ee
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 3
+    guid: 895570204
+    name: New G
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: New G
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 88
+        y: 68
+        width: 65
+        height: 49
+      spriteId: 15d72a0558a92614e9893c4a5c58b748
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 4
+    guid: -150043022
+    name: Load
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Load
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 12
+        y: 68
+        width: 65
+        height: 49
+      spriteId: b543a616e2b018b4eaefba3cb1c3724a
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 5
+    guid: -548091975
+    name: New G White
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: New G White
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 87
+        y: 67
+        width: 67
+        height: 51
+      spriteId: 20e09406a7cb9af49b578c3408054dff
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 6
+    guid: -668459867
+    name: Exit White
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Exit White
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 239
+        y: 67
+        width: 67
+        height: 51
+      spriteId: 73869041db6833c4c9a5271fe937660c
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 7
+    guid: 1799904602
+    name: Endless White
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Endless White
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 163
+        y: 67
+        width: 67
+        height: 51
+      spriteId: b1f3080158f7c2147ab21dd2f2d0801f
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 8
+    guid: -342361615
+    name: Load White
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Load White
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 11
+        y: 67
+        width: 67
+        height: 51
+      spriteId: bf65fedbfabf79d49a229d9a147b09dd
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: Default
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 320, y: 410}
