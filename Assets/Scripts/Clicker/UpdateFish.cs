@@ -15,7 +15,6 @@ public class UpdateFish : MonoBehaviour
     }
 
     private void ClickerLogic_OnSpacePressed(object sender, ClickerLogic.OnSpacePressedEventArgs e) {
-        Debug.Log("Space! " + e.spaceCount);
         fishText.text = "Pets: " + e.spaceCount;
     }
 
