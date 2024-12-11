@@ -23,6 +23,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGames/MGFlappyBird.unity
     guid: 02a84291626042f49b734b052849e2eb
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Crossroads.unity
+    guid: 1397a991d481aac4fbdc2bebbe69cca4
+  - enabled: 1
+    path: Assets/Scenes/Overworld/MushroomCave.unity
+    guid: e05a4f7b332a9ae48ad88b0aa8e69114
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Sea.unity
+    guid: 1840cb437955700438066119ec22d296
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
