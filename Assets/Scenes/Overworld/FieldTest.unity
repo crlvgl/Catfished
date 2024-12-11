@@ -2410,7 +2410,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1325423251}
   - component: {fileID: 1325423250}
-  - component: {fileID: 1325423249}
   - component: {fileID: 1325423248}
   m_Layer: 0
   m_Name: Clouds
@@ -2431,21 +2430,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8b293a8d32ca24c8a88a78cb55f136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 1
   moveRight: 1
   destroyPoint: 48
---- !u!114 &1325423249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1325423247}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4827af656f4254c49a0643742f625c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
   parallaxEffect: 0.6
   cam: {fileID: 1284372384}
 --- !u!212 &1325423250
@@ -3717,7 +3704,7 @@ Transform:
   m_GameObject: {fileID: 2059887514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.99, y: 0, z: 0}
+  m_LocalPosition: {x: -24, y: -1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3736,8 +3723,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cloudPrefab: {fileID: 6831741385024163019, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
-  cloudSpeed: 10
-  cloudSize: 48
+  cloudSpeed: 1
+  cloudSize: 24
 --- !u!1001 &2116195452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4034,10 +4021,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1019321494555465277, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 1284372384}
     - target: {fileID: 4907332578337248061, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -4079,14 +4062,27 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5603652687945674459, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1284372384}
+    - target: {fileID: 5603652687945674459, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
       propertyPath: speed
-      value: 10
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603652687945674459, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
+      propertyPath: moveRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5603652687945674459, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
+      propertyPath: parallaxEffect
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 6831741385024163019, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
       propertyPath: m_Name
       value: Clouds
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

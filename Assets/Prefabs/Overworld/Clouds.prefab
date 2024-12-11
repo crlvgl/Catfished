@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4907332578337248061}
   - component: {fileID: 8201832160608259328}
-  - component: {fileID: 1019321494555465277}
   - component: {fileID: 5603652687945674459}
   m_Layer: 0
   m_Name: Clouds
@@ -89,20 +88,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1019321494555465277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6831741385024163019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4827af656f4254c49a0643742f625c5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parallaxEffect: 0.6
-  cam: {fileID: 0}
 --- !u!114 &5603652687945674459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115,6 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8b293a8d32ca24c8a88a78cb55f136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 1
   moveRight: 1
   destroyPoint: 48
+  parallaxEffect: 0.6
+  cam: {fileID: 0}
