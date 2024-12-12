@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5.0f;
     public float jumpForce = 5.0f;
     public GameObject window;
+    public KeyCode pauseKey = KeyCode.Escape;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,13 +30,9 @@ public class PlayerMovement : MonoBehaviour
         // {
         //     jump = true;
         // }
-        if (Input.GetKeyDown("e"))
+        if (Input.GetKeyDown(pauseKey))
         {
             open = true;
-        }
-        if (Input.GetKeyDown("escape"))
-        {
-            close = true;
         }
     }
 
@@ -56,13 +53,8 @@ public class PlayerMovement : MonoBehaviour
         }
         if (open)
         {
-            window.SetActive(true);
+            window.SetActive(!window.activeSelf);
             open = false;
-        }
-        if (close)
-        {
-            window.SetActive(false);
-            close = false;
         }
     }
 }

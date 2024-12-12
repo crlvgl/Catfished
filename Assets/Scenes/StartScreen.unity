@@ -290,6 +290,7 @@ MonoBehaviour:
   pathToFirstScene: Assets/Scenes/Overworld/FieldTest.unity
   pathToLoadingScreen: Assets/Scenes/LoadingScreen.unity
   waitTime: 0.1
+  mouseOver: {fileID: 2874631880641106624, guid: 9e4f44af8d59c5442a360dde0f879527, type: 3}
 --- !u!61 &408765647
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -441,6 +442,7 @@ MonoBehaviour:
   pathToFirstScene: Assets/Scenes/Overworld/FieldTest.unity
   pathToLoadingScreen: Assets/Scenes/LoadingScreen.unity
   waitTime: 0.1
+  mouseOver: {fileID: -6933033764904158974, guid: 9e4f44af8d59c5442a360dde0f879527, type: 3}
 --- !u!61 &512730195
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -592,6 +594,7 @@ MonoBehaviour:
   pathToFirstScene: Assets/Scenes/Overworld/FieldTest.unity
   pathToLoadingScreen: Assets/Scenes/LoadingScreen.unity
   waitTime: 0.1
+  mouseOver: {fileID: -3033352237170713047, guid: 9e4f44af8d59c5442a360dde0f879527, type: 3}
 --- !u!61 &704774227
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -940,6 +943,7 @@ MonoBehaviour:
   pathToFirstScene: Assets/Scenes/Overworld/FieldTest.unity
   pathToLoadingScreen: Assets/Scenes/LoadingScreen.unity
   waitTime: 0.1
+  mouseOver: {fileID: 3884596117310450707, guid: 9e4f44af8d59c5442a360dde0f879527, type: 3}
 --- !u!61 &919009122
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1207,7 +1211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPos: {x: 0, y: 0.1, z: -10}
-  movementTime: 2
+  movementTime: 1.2
   wiggleTime: 0.25
   wiggleAmount: 0.1
   buttonText: {fileID: 163311341}

@@ -10,7 +10,9 @@ public class UIButtons : MonoBehaviour
         New,
         Exit,
         Freeplay,
-        Save
+        Save,
+        ToTitleScreen,
+        ContinueGame
     }
     [Header("Button Function")]
     [Tooltip("Function of the button")]
@@ -21,12 +23,27 @@ public class UIButtons : MonoBehaviour
     public string pathToFirstScene = "Assets/Scenes/Overworld/FieldTest.unity";
     [Tooltip("Path to the loading screen")]
     public string pathToLoadingScreen = "Assets/Scenes/LoadingScreen.unity";
+    [Tooltip("Path to the title screen")]
+    public string pathToTitleScreen = "Assets/Scenes/StartScreen.unity";
     [Header("Optional Settings")]
     [Tooltip("Time to wait before loading the scene; if 0, loads immediately")]
     public float waitTime = 0.1f;
+
+    [Header("Sprite Settings")]
+    public Sprite mouseOver;
+    private SpriteRenderer spriteRenderer;
+    private Sprite defaultSprite;
+
     void Start()
     {
         functionOfButton = buttonOptions.ToString().ToLower();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        defaultSprite = spriteRenderer.sprite;
+    }
+
+    void OnMouseEnter()
+    {
+        spriteRenderer.sprite = mouseOver;
     }
 
     void OnMouseDown()
@@ -47,7 +64,19 @@ public class UIButtons : MonoBehaviour
                 break;
             case "save":
                 break;
+            case "totitlescreen":
+                staticBackbone.sceneToLoad = pathToTitleScreen;
+                StartCoroutine(LoadScene(pathToLoadingScreen));
+                break;
+            case "continuegame":
+                this.transform.parent.gameObject.SetActive(false);
+                break;
         }
+    }
+
+    void OnMouseExit()
+    {
+        spriteRenderer.sprite = defaultSprite;
     }
 
     IEnumerator LoadScene(string SceneToLoad)
