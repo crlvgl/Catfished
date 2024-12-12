@@ -14,16 +14,20 @@ public class LoadSceneTriggerzone : MonoBehaviour
 
     public bool moveCharacter = false;
     public bool moveCharacterRight = false;
+    public GameObject restraintCollider;
     private bool moveCharacterNow = false;
     public bool fadeToBlack = false;
     private bool fadeToBlackNow = false;
     public float timeBeforeFade = 0.5f;
     public SpriteRenderer blackScreen;
     public float fadeSpeed = 1.0f;
+    private Camera cam;
+    private Vector3 camPos;
 
     public GameObject player;
 
     private bool canLoad = false;
+    private bool loading = false;
 
     void Start()
     {
@@ -35,22 +39,28 @@ public class LoadSceneTriggerzone : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(pressedKey))
+        if (Input.GetKeyDown(pressedKey) && canLoad && !loading)
         {
             // Debug.Log("Button has been pressed");
-            canLoad = true;
+            loading = true;
+            canLoad = false;
+            cam = Camera.main;
+            camPos = cam.transform.position;
+            Debug.Log("Loading scene: " + scenePath);
+            StartCoroutine(LoadScene());
         }
 
         if (moveCharacterNow)
         {
             if (moveCharacterRight)
             {
-                // player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x + 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x + 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
             }
             else
             {
                 player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x - 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
             }
+            cam.transform.position = camPos;
         }
 
         if (fadeToBlackNow && blackScreen.color.a < 1)
@@ -70,12 +80,7 @@ public class LoadSceneTriggerzone : MonoBehaviour
         if (other.gameObject.name == "Player")
         {
             // Debug.Log("Player has entered the trigger zone");
-            if (canLoad)
-            {
-                canLoad = false;
-                Debug.Log("Loading scene: " + scenePath);
-                StartCoroutine(LoadScene());
-            }
+            canLoad = true;
         }
     }
 
@@ -89,9 +94,10 @@ public class LoadSceneTriggerzone : MonoBehaviour
     {
         if (moveCharacter)
         {
-            Destroy(player.GetComponent<Rigidbody2D>());
+            Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), restraintCollider.GetComponent<Collider2D>());
             moveCharacterNow = true;
         }
+
         if (fadeToBlack)
         {
             yield return new WaitForSeconds(timeBeforeFade);
@@ -102,6 +108,11 @@ public class LoadSceneTriggerzone : MonoBehaviour
 
         yield return new WaitForSeconds(waitTime);
 
+        StartCoroutine(LoadSceneAsync());
+    }
+
+    IEnumerator LoadSceneAsync()
+    {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(loadingScreenPath);
 
         while (!asyncLoad.isDone)
