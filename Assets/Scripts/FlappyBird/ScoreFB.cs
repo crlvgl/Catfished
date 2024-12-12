@@ -52,7 +52,7 @@ public class ScoreFB : MonoBehaviour
         }
         else
         {
-            gameOverText.text = "Game Over!\nScore: " + score + "pts\nTime: " + string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds) + "s";
+            gameOverText.text = "Game Over!\nScore: " + score + "pts\nTime: " + string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds) + "s\npress 'e' to continue";
             scoreText.text = "";
             timerText.text = "";
         }

@@ -1949,7 +1949,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b321e6e2b1256ef4fafdebc9f5423a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scenePath: Assets/Scenes/Overworld/ForrestTest.unity
+  scenePath: Assets/Scenes/MiniGames/MGFlappyBird.unity
   loadingScreenPath: Assets/Scenes/LoadingScreen.unity
   pressedKey: 32
   waitTime: 0.2
