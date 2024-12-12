@@ -88,6 +88,7 @@ public class LoadSceneTriggerzone : MonoBehaviour
     {
         // TODO
         // remove the pop-up text
+        canLoad = false;
     }
 
     IEnumerator LoadScene()
