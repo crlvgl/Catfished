@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0ee2514747d0be048a674d2e253ea31e
+guid: 3b66c7fca98390b42934082c821f6f60
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638695503562042920
+  platformSettingsDirtyTick: 638695512366026346
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,7 +122,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Hinten
+  - name: 6
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 320
+      width: 1201
       height: 180
-    spriteID: 13977bb4df9051c44b9c0b907a230e18
+    spriteID: 8d87fda644a2cf24eb1fb8fc2bb5e763
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,7 +143,28 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Mitte
+  - name: 5
+    originalName: 
+    pivot: {x: 0.49916175, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 192
+      width: 1193
+      height: 180
+    spriteID: eff8aa6524ff2a24a873e15f2eb6a647
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -1, y: 192}
+  - name: 4
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -152,10 +173,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 192
-      width: 320
-      height: 180
-    spriteID: b897cfeac19359b4d9574a9111eebf51
+      y: 513
+      width: 1201
+      height: 112
+    spriteID: 24fbf476529257040ae714ffc826cd3a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,10 +184,52 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 192}
-  - name: Vorne
+    uvTransform: {x: 4, y: 513}
+  - name: 3
     originalName: 
-    pivot: {x: 0.51446944, y: 0}
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 633
+      width: 1201
+      height: 73
+    spriteID: e992549066070f646b3928393bedcb30
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 633}
+  - name: 2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 714
+      width: 1201
+      height: 60
+    spriteID: 4c2fc587b27a75e44a25ab762e6396df
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 714}
+  - name: 1
+    originalName: 
+    pivot: {x: 0.49663582, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -174,9 +237,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 380
-      width: 311
-      height: 101
-    spriteID: 860538e1d63ea6944abab26ec0707ac8
+      width: 1189
+      height: 125
+    spriteID: 6513ae658776b7e4c9e76dfb22255243
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -184,61 +247,115 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 380}
+    uvTransform: {x: -6, y: 380}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 72165636
-    name: Hinten
+    guid: 1666753564
+    name: 6
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Hinten
+    - name: 6
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 1201
         height: 180
-      spriteId: 13977bb4df9051c44b9c0b907a230e18
+      spriteId: 8d87fda644a2cf24eb1fb8fc2bb5e763
     linkedCells: []
     parentIndex: -1
   - layerIndex: 1
-    guid: 1358701532
-    name: Mitte
+    guid: 1666752372
+    name: 5
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Mitte
+    - name: 5
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 1201
         height: 180
-      spriteId: b897cfeac19359b4d9574a9111eebf51
+      spriteId: eff8aa6524ff2a24a873e15f2eb6a647
     linkedCells: []
     parentIndex: -1
   - layerIndex: 2
-    guid: -1223644742
-    name: Vorne
+    guid: 1666752768
+    name: 4
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Vorne
+    - name: 4
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 320
+        width: 1201
         height: 180
-      spriteId: 860538e1d63ea6944abab26ec0707ac8
+      spriteId: 24fbf476529257040ae714ffc826cd3a
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 3
+    guid: 1666754752
+    name: 3
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: 3
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1201
+        height: 180
+      spriteId: e992549066070f646b3928393bedcb30
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 4
+    guid: 1666755156
+    name: 2
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: 2
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1201
+        height: 180
+      spriteId: 4c2fc587b27a75e44a25ab762e6396df
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 5
+    guid: 1666753964
+    name: 1
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: 1
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 1201
+        height: 180
+      spriteId: 6513ae658776b7e4c9e76dfb22255243
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -281,4 +398,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 320, y: 180}
+  canvasSize: {x: 1201, y: 180}

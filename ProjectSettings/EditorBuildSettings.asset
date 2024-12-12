@@ -5,9 +5,33 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Overworld/TestScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/StartScreen.unity
+    guid: 3dfb26a8d05a32c498cd01fda862cb31
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 4cf12aed4ba3e7d4ebf27da75dacc269
+  - enabled: 1
+    path: Assets/Scenes/Overworld/FieldTest.unity
+    guid: e1a47cf1f4824fc4d97c87a923ba8e62
+  - enabled: 1
+    path: Assets/Scenes/Overworld/ForrestTest.unity
+    guid: 064b53065f0949546971e5929b7d606a
+  - enabled: 1
+    path: Assets/Scenes/MiniGames/MGFlappyBird.unity
+    guid: 02a84291626042f49b734b052849e2eb
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Crossroads.unity
+    guid: 1397a991d481aac4fbdc2bebbe69cca4
+  - enabled: 1
+    path: Assets/Scenes/Overworld/MushroomCave.unity
+    guid: e05a4f7b332a9ae48ad88b0aa8e69114
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Sea.unity
+    guid: 1840cb437955700438066119ec22d296
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

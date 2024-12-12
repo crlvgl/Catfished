@@ -11,6 +11,10 @@ public class LoadingScreen : MonoBehaviour
 
     void Start()
     {
+        if (pathToScene == "" || pathToScene == null)
+        {
+            pathToScene = staticBackbone.sceneToLoad;
+        }
         StartCoroutine(LoadScene());
     }
 
@@ -24,6 +28,8 @@ public class LoadingScreen : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
 
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(pathToScene);
+
+        staticBackbone.sceneToLoad = null;
 
         while (!asyncLoad.isDone)
         {

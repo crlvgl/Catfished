@@ -904,6 +904,7 @@ GameObject:
   m_Component:
   - component: {fileID: 827930425}
   - component: {fileID: 827930424}
+  - component: {fileID: 827930426}
   m_Layer: 0
   m_Name: Score
   m_TagString: Untagged
@@ -946,6 +947,21 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &827930426
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827930423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 947f039a6c53e2d4fb6b0536d9953426, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  returnKey: 101
+  overworldScene: Assets/Scenes/Overworld/FieldTest.unity
+  loadingScreenScene: Assets/Scenes/LoadingScreen.unity
 --- !u!1 &1248481160
 GameObject:
   m_ObjectHideFlags: 0
@@ -2260,7 +2276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d79061fe7a7b20a4b80da514b12aa1f2, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d79061fe7a7b20a4b80da514b12aa1f2, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2272,7 +2288,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d79061fe7a7b20a4b80da514b12aa1f2, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d79061fe7a7b20a4b80da514b12aa1f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2284,7 +2300,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d79061fe7a7b20a4b80da514b12aa1f2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: d79061fe7a7b20a4b80da514b12aa1f2, type: 3}
       propertyPath: m_ConstrainProportionsScale
