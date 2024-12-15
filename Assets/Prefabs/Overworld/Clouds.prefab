@@ -100,8 +100,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d8b293a8d32ca24c8a88a78cb55f136, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0.1
   moveRight: 1
   destroyPoint: 48
-  parallaxEffect: 0.6
+  parallaxEffect: 0.8
   cam: {fileID: 0}
