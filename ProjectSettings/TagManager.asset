@@ -8,6 +8,7 @@ TagManager:
   - Enemy
   - Dialogue
   - Activator
+  - Bubble
   layers:
   - Default
   - TransparentFX
