@@ -14,7 +14,7 @@ public class LoadSceneTriggerzone : MonoBehaviour
 
     public bool moveCharacter = false;
     public bool moveCharacterRight = false;
-    public GameObject restraintCollider;
+    public GameObject[] restraintCollider;
     private bool moveCharacterNow = false;
     public bool fadeToBlack = false;
     private bool fadeToBlackNow = false;
@@ -95,7 +95,10 @@ public class LoadSceneTriggerzone : MonoBehaviour
     {
         if (moveCharacter)
         {
-            Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), restraintCollider.GetComponent<Collider2D>());
+            foreach (GameObject restraint in restraintCollider)
+            {
+                Physics2D.IgnoreCollision(player.GetComponent<Collider2D>(), restraint.GetComponent<Collider2D>());
+            }
             moveCharacterNow = true;
         }
 

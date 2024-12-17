@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class MoveCameraHouse : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class MoveCameraHouse : MonoBehaviour
     private bool moveLeft = false;
     private Vector3 startPos;
     private float elapsedTime;
+    public bool followPlayerRight = false;
+    public bool followPlayerLeft = false;
+    public float waitTime = 0.0f;
 
     void Start()
     {
@@ -35,6 +39,10 @@ public class MoveCameraHouse : MonoBehaviour
                     moveRight = false;
                     elapsedTime = 0.0f;
                     moveCamera = false;
+                    if (followPlayerRight)
+                    {
+                        StartCoroutine(stallFollowPlayer());
+                    }
                 }
             }
             else if (moveLeft)
@@ -48,6 +56,10 @@ public class MoveCameraHouse : MonoBehaviour
                     moveLeft = false;
                     elapsedTime = 0.0f;
                     moveCamera = false;
+                    if (followPlayerLeft)
+                    {
+                        StartCoroutine(stallFollowPlayer());
+                    }
                 }
             }
         }
@@ -57,6 +69,7 @@ public class MoveCameraHouse : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
+            cam.GetComponent<CameraFollowPlayer>().followPlayer = false;
             moveCamera = true;
             startPos = cam.transform.position;
             if (cam.transform.position == positionLeft)
@@ -68,5 +81,11 @@ public class MoveCameraHouse : MonoBehaviour
                 moveLeft = true;
             }
         }
+    }
+
+    IEnumerator stallFollowPlayer()
+    {
+        yield return new WaitForSeconds(waitTime);
+        cam.GetComponent<CameraFollowPlayer>().followPlayer = true;
     }
 }

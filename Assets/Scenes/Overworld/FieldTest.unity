@@ -1206,7 +1206,8 @@ MonoBehaviour:
   waitTime: 1
   moveCharacter: 1
   moveCharacterRight: 0
-  restraintCollider: {fileID: 1472306810}
+  restraintCollider:
+  - {fileID: 1472306810}
   fadeToBlack: 1
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1441735868}
@@ -2503,7 +2504,7 @@ Transform:
   m_GameObject: {fileID: 1005177242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24, y: -1.3, z: 0}
+  m_LocalPosition: {x: -27.1, y: -0.945, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2546,7 +2547,8 @@ MonoBehaviour:
   waitTime: 1
   moveCharacter: 1
   moveCharacterRight: 1
-  restraintCollider: {fileID: 753492730}
+  restraintCollider:
+  - {fileID: 753492730}
   fadeToBlack: 1
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1441735868}
@@ -3067,7 +3069,8 @@ MonoBehaviour:
   waitTime: 1
   moveCharacter: 0
   moveCharacterRight: 0
-  restraintCollider: {fileID: 0}
+  restraintCollider:
+  - {fileID: 0}
   fadeToBlack: 1
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1441735868}
@@ -5454,7 +5457,7 @@ Transform:
   m_GameObject: {fileID: 2059887514}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24, y: -0.945001, z: 0}
+  m_LocalPosition: {x: -24, y: -1.3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6034,7 +6037,6 @@ SceneRoots:
   - {fileID: 1152409411}
   - {fileID: 2045807125}
   - {fileID: 1679311087}
-  - {fileID: 565817040}
   - {fileID: 1895948993}
   - {fileID: 2143686751}
   - {fileID: 1227018584}
@@ -6044,3 +6046,4 @@ SceneRoots:
   - {fileID: 545685383}
   - {fileID: 1007388827}
   - {fileID: 725390232}
+  - {fileID: 565817040}
