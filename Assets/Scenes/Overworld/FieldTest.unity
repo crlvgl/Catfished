@@ -2473,6 +2473,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1005177244}
   - component: {fileID: 1005177243}
+  - component: {fileID: 1005177245}
   m_Layer: 0
   m_Name: CloudSpawnerBlau
   m_TagString: Untagged
@@ -2504,12 +2505,26 @@ Transform:
   m_GameObject: {fileID: 1005177242}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.1, y: -0.945, z: 0}
+  m_LocalPosition: {x: -25, y: -0.945, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1005177245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005177242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4827af656f4254c49a0643742f625c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffect: 0.9
+  cam: {fileID: 1284372384}
 --- !u!1 &1007388823
 GameObject:
   m_ObjectHideFlags: 0
@@ -2877,6 +2892,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3626916397498700004, guid: 7112fec6743ce3a4a8e50e257d4d710a, type: 3}
+      propertyPath: m_Color.a
+      value: 0.92156863
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 7112fec6743ce3a4a8e50e257d4d710a, type: 3}
       propertyPath: m_SortingOrder
       value: -700
       objectReference: {fileID: 0}
@@ -2894,7 +2913,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 7112fec6743ce3a4a8e50e257d4d710a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.1
+      value: -25
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 7112fec6743ce3a4a8e50e257d4d710a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5441,6 +5460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059887515}
   - component: {fileID: 2059887516}
+  - component: {fileID: 2059887517}
   m_Layer: 0
   m_Name: CloudSpawner
   m_TagString: Untagged
@@ -5478,6 +5498,20 @@ MonoBehaviour:
   cloudPrefab: {fileID: 6831741385024163019, guid: 5964a60ba19be4e418c2ea0cfdb72a5f, type: 3}
   cloudSpeed: 0.1
   cloudSize: 24
+--- !u!114 &2059887517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059887514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4827af656f4254c49a0643742f625c5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parallaxEffect: 0.8
+  cam: {fileID: 1284372384}
 --- !u!1001 &2116195452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5879,6 +5913,10 @@ PrefabInstance:
     - target: {fileID: 5139057720733255518, guid: d1b62c1ceb3760943832276157a5eb46, type: 3}
       propertyPath: parallaxEffect
       value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6742347697648716850, guid: d1b62c1ceb3760943832276157a5eb46, type: 3}
+      propertyPath: m_Color.a
+      value: 0.92156863
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
