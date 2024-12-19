@@ -22,7 +22,7 @@ public class BackgroundFB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ScoreFB.gameOver)
+        if (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver)
         {
             return;
         }

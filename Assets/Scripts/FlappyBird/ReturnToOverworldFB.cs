@@ -10,7 +10,7 @@ public class ReturnToOverworldFB : MonoBehaviour
 
     void Update()
     {
-        if (ScoreFB.gameOver)
+        if (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver)
         {
             if (Input.GetKeyDown(returnKey))
             {

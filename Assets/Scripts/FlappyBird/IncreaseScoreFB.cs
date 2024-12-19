@@ -18,7 +18,7 @@ public class IncreaseScoreFB : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            ScoreFB.score++;
+            GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().score++;
             Destroy(this.gameObject);
         }
     }

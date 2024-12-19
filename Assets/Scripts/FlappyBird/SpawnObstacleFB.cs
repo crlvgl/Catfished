@@ -36,12 +36,12 @@ public class SpawnObstacleFB : MonoBehaviour
 
     IEnumerator SpawnObstacle()
     {
-        if (!ScoreFB.gameOver)
+        if (!GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver)
         {
-            yield return new WaitForSeconds(spawnRate/ScoreFB.speed);
+            yield return new WaitForSeconds(spawnRate/GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().speed);
             if (spawnBirds)
             {
-                if (ScoreFB.score > difficulty2)
+                if (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().score > difficulty2)
                 {
                     random = Random.Range(0, 8);
                 }

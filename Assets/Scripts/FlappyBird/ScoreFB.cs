@@ -3,8 +3,8 @@ using TMPro;
 
 public class ScoreFB : MonoBehaviour
 {
-    public static int score = 0;
-    public static bool gameOver = false;
+    public int score = 0;
+    public bool gameOver = false;
     public TMP_Text scoreText;
     public TMP_Text timerText;
     public TMP_Text gameOverText;
@@ -13,7 +13,7 @@ public class ScoreFB : MonoBehaviour
     private int seconds = 0;
     private int milliseconds = 0;
 
-    public static float speed = 5f;
+    public float speed = 5f;
     public int difficulty2 = 60;
     public float maxSpeedModifier = 3f;
     public int stepSize = 2;

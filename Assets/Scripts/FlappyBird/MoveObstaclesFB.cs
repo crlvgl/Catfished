@@ -13,10 +13,10 @@ public class MoveObstaclesFB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (ScoreFB.gameOver)
+        if (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver)
         {
             return;
         }
-        this.transform.position += Vector3.left * (ScoreFB.speed - backgroundSlowdown) * Time.deltaTime;
+        this.transform.position += Vector3.left * (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().speed - backgroundSlowdown) * Time.deltaTime;
     }
 }

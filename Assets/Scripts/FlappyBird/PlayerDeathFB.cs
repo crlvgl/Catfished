@@ -20,7 +20,7 @@ public class PlayerDeathFB : MonoBehaviour
         {
             Destroy(other.gameObject);
             Debug.Log("Player has died");
-            ScoreFB.gameOver = true;
+            GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver = true;
         }
         else if (other.gameObject.name == "Death")
         {
