@@ -22,7 +22,7 @@ public class Bullet : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
-            TimerScore.score += 36 * PlayerHealth.health;
+            GameObject.Find("Timer").gameObject.GetComponent<TimerScore>().score += 36 * GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health;
             Destroy(this.gameObject);
         }
 

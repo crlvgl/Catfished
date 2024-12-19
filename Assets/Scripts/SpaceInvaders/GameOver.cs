@@ -24,7 +24,7 @@ public class GameOver : MonoBehaviour
             if (Time.time >= nextDamage)
             {
                 nextDamage = Time.time + 1f;
-                PlayerHealth.health -= 1;
+                GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health -= 1;
                 spriteRenderer.color = new Color(1f, 0f, 0f, 0.5f);
             }
         }

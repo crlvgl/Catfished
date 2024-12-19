@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnEnemy()
     {
-        if (PlayerHealth.health > 0)
+        if (GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health > 0)
         {
             yield return new WaitForSeconds(spawnTime);
             Instantiate(enemyPrefab, transform.position, this.transform.rotation);

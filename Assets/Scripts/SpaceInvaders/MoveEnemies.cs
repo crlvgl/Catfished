@@ -19,7 +19,7 @@ public class MoveEnemies : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (PlayerHealth.health > 0)
+        if (GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health > 0)
         {
             if (moveRight && Time.time > nextMovement)
             {

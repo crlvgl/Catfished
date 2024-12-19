@@ -21,14 +21,14 @@ public class EnemyBullet : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            PlayerHealth.health -= 1;
-            if (TimerScore.score > 500)
+            GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health -= 1;
+            if (GameObject.Find("Timer").gameObject.GetComponent<TimerScore>().score > 500)
             {
-                TimerScore.score -= 500;
+                GameObject.Find("Timer").gameObject.GetComponent<TimerScore>().score -= 500;
             }
-            else if (TimerScore.score <= 500)
+            else if (GameObject.Find("Timer").gameObject.GetComponent<TimerScore>().score <= 500)
             {
-                TimerScore.score = 0;
+                GameObject.Find("Timer").gameObject.GetComponent<TimerScore>().score = 0;
             }
             Destroy(this.gameObject);
         }
