@@ -3,7 +3,7 @@ using UnityEngine;
 public class Ladder : MonoBehaviour
 {
     public GameObject player;
-    public static bool isOnLadder;
+    public bool isOnLadder;
     float startGrav;
     Rigidbody2D playerBody;
 

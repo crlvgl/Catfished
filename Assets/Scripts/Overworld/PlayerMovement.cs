@@ -15,10 +15,13 @@ public class PlayerMovement : MonoBehaviour
     public GameObject window;
     public KeyCode pauseKey = KeyCode.Escape;
 
+    private bool ladderExists;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        ladderExists = GameObject.Find("Ladder") != null;
     }
 
     // Update is called once per frame
@@ -43,9 +46,16 @@ public class PlayerMovement : MonoBehaviour
         //     body.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         //     jump = false;
         // }
-        if (Ladder.isOnLadder == false)
+        if (ladderExists)
         {
-            body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+            if (GameObject.Find("Ladder").gameObject.GetComponent<Ladder>().isOnLadder == false)
+            {
+                body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
+            }
+            else
+            {
+                body.linearVelocity = new Vector2(horizontal * speed, vertical * speed);
+            }
         }
         else
         {
