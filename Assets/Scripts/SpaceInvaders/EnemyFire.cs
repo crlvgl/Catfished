@@ -9,17 +9,18 @@ public class EnemyFire : MonoBehaviour
     private float fireFor = 0f;
     private bool waitFor = true;
     private float waitForTime = 0f;
+    private PlayerHealth playerHealthSI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        playerHealthSI = GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health <= 0 || this.transform.position.y > 14.5 || this.transform.position.y < -12)
+        if (playerHealthSI.health <= 0 || this.transform.position.y > 14.5 || this.transform.position.y < -12)
         {
             return;
         }

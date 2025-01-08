@@ -5,10 +5,14 @@ public class GameOver : MonoBehaviour
     SpriteRenderer spriteRenderer;
     private float nextDamage = 0f;
 
+    private PlayerHealth playerHealthSI;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+
+        playerHealthSI = GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -24,7 +28,7 @@ public class GameOver : MonoBehaviour
             if (Time.time >= nextDamage)
             {
                 nextDamage = Time.time + 1f;
-                GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health -= 1;
+                playerHealthSI.health -= 1;
                 spriteRenderer.color = new Color(1f, 0f, 0f, 0.5f);
             }
         }

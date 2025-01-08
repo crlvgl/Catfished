@@ -7,10 +7,16 @@ public class ReturnToOverworldFB : MonoBehaviour
     public KeyCode returnKey = KeyCode.E;
     public string overworldScene = "Assets/Scenes/Overworld/ForrestTest.unity";
     public string loadingScreenScene = "Assets/Scenes/LoadingScreen.unity";
+    private ScoreFB scoreFB;
+
+    void Start()
+    {
+        scoreFB = GameObject.Find("Score").gameObject.GetComponent<ScoreFB>();
+    }
 
     void Update()
     {
-        if (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver)
+        if (scoreFB.gameOver)
         {
             if (Input.GetKeyDown(returnKey))
             {

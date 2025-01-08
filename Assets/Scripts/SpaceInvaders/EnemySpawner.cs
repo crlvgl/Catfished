@@ -5,9 +5,14 @@ public class EnemySpawner : MonoBehaviour
 {
     public float spawnTime = 2f;
     public GameObject enemyPrefab;
+
+    private PlayerHealth playerHealthSI;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        playerHealthSI = GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>();
+
         StartCoroutine(SpawnEnemy());
     }
 
@@ -19,7 +24,7 @@ public class EnemySpawner : MonoBehaviour
 
     IEnumerator SpawnEnemy()
     {
-        if (GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health > 0)
+        if (playerHealthSI.health > 0)
         {
             yield return new WaitForSeconds(spawnTime);
             Instantiate(enemyPrefab, transform.position, this.transform.rotation);

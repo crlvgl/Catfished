@@ -20,12 +20,15 @@ public class SpawnObstacleFB : MonoBehaviour
     public int difficulty2 = 40;
     public bool spawnBirds = true;
     private int random;
+    private ScoreFB scoreFB;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         StartCoroutine(SpawnObstacle());
         spawnRate = spawnRate * 5;
+
+        scoreFB = GameObject.Find("Score").gameObject.GetComponent<ScoreFB>();
     }
 
     // Update is called once per frame
@@ -36,12 +39,12 @@ public class SpawnObstacleFB : MonoBehaviour
 
     IEnumerator SpawnObstacle()
     {
-        if (!GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver)
+        if (!scoreFB.gameOver)
         {
-            yield return new WaitForSeconds(spawnRate/GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().speed);
+            yield return new WaitForSeconds(spawnRate/scoreFB.speed);
             if (spawnBirds)
             {
-                if (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().score > difficulty2)
+                if (scoreFB.score > difficulty2)
                 {
                     random = Random.Range(0, 8);
                 }

@@ -10,16 +10,18 @@ public class MoveEnemies : MonoBehaviour
     private float nextMovement = 0f;
     public float movementRate = 1.0f;
 
+    private PlayerHealth playerHealthSI;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        playerHealthSI = GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health > 0)
+        if (playerHealthSI.health > 0)
         {
             if (moveRight && Time.time > nextMovement)
             {

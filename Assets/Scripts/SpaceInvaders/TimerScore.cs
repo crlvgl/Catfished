@@ -8,16 +8,21 @@ public class TimerScore : MonoBehaviour
     public TMP_Text gameOverText;
     private float elapsedTime = 0f;
     public int score = 0;
+
+    private PlayerHealth playerHealthSI;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         gameOverText.text = "";
+
+        playerHealthSI = GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health > 0)
+        if (playerHealthSI.health > 0)
         {
             elapsedTime += Time.deltaTime;
 
@@ -29,7 +34,7 @@ public class TimerScore : MonoBehaviour
             
             scoreText.text = score.ToString() + "pts";
         }
-        else if (GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health <= 0)
+        else if (playerHealthSI.health <= 0)
         {
             gameOverText.text = "Game Over\nFinal Score: " + score + "pts\nFinal Time: " + string.Format("{0:00}:{1:00}:{2:000}", (int)elapsedTime / 60, (int)elapsedTime % 60, (int)(elapsedTime * 1000) % 1000);
             timerText.text = "";

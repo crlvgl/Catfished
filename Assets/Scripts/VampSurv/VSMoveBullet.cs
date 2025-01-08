@@ -6,14 +6,18 @@ public class VSMoveBullet : MonoBehaviour
     public int bulletDamage = 3;
     public float distanceToDestroy = 15.0f;
 
+    private GameObject player;
+
     void Start()
     {
-        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), GameObject.Find("Player").GetComponent<Collider2D>());
+        player = GameObject.Find("Player");
+
+        Physics2D.IgnoreCollision(GetComponent<Collider2D>(), player.GetComponent<Collider2D>());
     }
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, GameObject.Find("Player").transform.position) > distanceToDestroy)
+        if (Vector3.Distance(transform.position, player.transform.position) > distanceToDestroy)
         {
             Destroy(this.gameObject);
         }

@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class IncreaseScoreFB : MonoBehaviour
 {
+    private ScoreFB scoreFB;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        scoreFB = GameObject.Find("Score").gameObject.GetComponent<ScoreFB>();
     }
 
     // Update is called once per frame
@@ -18,7 +19,7 @@ public class IncreaseScoreFB : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
-            GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().score++;
+            scoreFB.score++;
             Destroy(this.gameObject);
         }
     }

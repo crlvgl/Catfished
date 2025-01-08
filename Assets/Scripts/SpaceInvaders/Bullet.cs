@@ -4,11 +4,14 @@ public class Bullet : MonoBehaviour
 {
     public float speed = 25.0f;
     public string deathName = "Death";
+    private TimerScore timerScoreSI;
+    private PlayerHealth playerHealthSI;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        timerScoreSI = GameObject.Find("Timer").gameObject.GetComponent<TimerScore>();
+        playerHealthSI = GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -22,7 +25,7 @@ public class Bullet : MonoBehaviour
         if (other.gameObject.tag == "Enemy")
         {
             Destroy(other.gameObject);
-            GameObject.Find("Timer").gameObject.GetComponent<TimerScore>().score += 36 * GameObject.Find("Player").gameObject.GetComponent<PlayerHealth>().health;
+            timerScoreSI.score += 36 * playerHealthSI.health;
             Destroy(this.gameObject);
         }
 

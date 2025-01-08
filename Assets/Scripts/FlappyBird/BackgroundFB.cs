@@ -7,6 +7,7 @@ public class BackgroundFB : MonoBehaviour
     private float width;
     public float destroyX = -46f;
     private bool hasSpawned = false;
+    private ScoreFB scoreFB;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,12 +18,14 @@ public class BackgroundFB : MonoBehaviour
         }
 
         width = backgroundSprite.bounds.size.x;
+
+        scoreFB = GameObject.Find("Score").gameObject.GetComponent<ScoreFB>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Score").gameObject.GetComponent<ScoreFB>().gameOver)
+        if (scoreFB.gameOver)
         {
             return;
         }
