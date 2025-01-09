@@ -6,6 +6,7 @@ public class CameraFollowPlayer : MonoBehaviour
     public float deadZoneLeft;
     public float deadZoneRight;
     public bool followPlayer = false;
+    MoveAfterLoad moveAfterLoad;
 
     void Start()
     {
@@ -13,11 +14,13 @@ public class CameraFollowPlayer : MonoBehaviour
         {
             player = GameObject.Find("Player").transform;
         }
+
+        moveAfterLoad = GameObject.Find("Player").gameObject.transform.Find("MoveOnLoad").gameObject.GetComponent<MoveAfterLoad>();
     }
 
     void Update()
     {
-        if (followPlayer)
+        if (followPlayer && moveAfterLoad.camFollowPlayer)
         {
             if (player.position.x >= deadZoneRight)
             {

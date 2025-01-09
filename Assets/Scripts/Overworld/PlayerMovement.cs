@@ -28,6 +28,11 @@ public class PlayerMovement : MonoBehaviour
         {
             ladder = GameObject.Find("Ladder").gameObject.GetComponent<Ladder>();
         }
+
+        if (window == null)
+        {
+            window = GameObject.Find("PauseMenu");
+        }
     }
 
     // Update is called once per frame

@@ -51,6 +51,13 @@ public class UIButtons : MonoBehaviour
         switch (functionOfButton)
         {
             case "load":
+                if (SaveLoad._instance == null)
+                {
+                    GameObject saveLoadObject = new GameObject("SaveLoad");
+                    SaveLoad._instance = saveLoadObject.AddComponent<SaveLoad>();
+                    Debug.Log("SaveLoad instance created");
+                }
+                SaveLoad.LoadGame();
                 break;
             case "new":
                 staticBackbone.sceneToLoad = pathToFirstScene;
@@ -63,6 +70,7 @@ public class UIButtons : MonoBehaviour
             case "freeplay":
                 break;
             case "save":
+                SaveLoad.SaveGame();
                 break;
             case "totitlescreen":
                 staticBackbone.sceneToLoad = pathToTitleScreen;
@@ -88,4 +96,6 @@ public class UIButtons : MonoBehaviour
             yield return null;
         }
     }
+
+    
 }
