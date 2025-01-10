@@ -35,6 +35,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overworld/House.unity
     guid: 85e3f443b1fe8d043bc35c7154bb932c
+  - enabled: 1
+    path: Assets/Scenes/Overworld/Computer.unity
+    guid: 6cd0f23a3f452c348a79c18d0c4343ae
+  - enabled: 1
+    path: Assets/Scenes/Overworld/CloudLake.unity
+    guid: 3d2047a6766e0034f86c130d238a8f18
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
