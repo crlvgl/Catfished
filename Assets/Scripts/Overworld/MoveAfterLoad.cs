@@ -40,5 +40,10 @@ public class MoveAfterLoad : MonoBehaviour
                 camFollowPlayer = true;
             }
         }
+
+        else
+        {
+            camFollowPlayer = true;
+        }
     }
 }

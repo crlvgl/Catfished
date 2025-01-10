@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb634eeeddc52ed4c9018f4919756ff8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camFollowPlayer: 0
 --- !u!1001 &5601175058294040251
 PrefabInstance:
   m_ObjectHideFlags: 0
