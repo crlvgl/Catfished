@@ -646,7 +646,7 @@ SpriteRenderer:
   m_Size: {x: 12.01, y: 1.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &425249081
@@ -940,21 +940,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0ebac67800459c4ca53330257b47805, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pipePrefab1: {fileID: 5289608725481155218, guid: 928a1d3db5060cd45927043e50c6c218, type: 3}
-  pipePrefab2: {fileID: 8099985050224852729, guid: 9caf2babf34a083469a90170831d32eb, type: 3}
-  pipePrefab3: {fileID: 7258148962883994465, guid: e7ee0865aba645d4482da940f46d1ab5, type: 3}
-  pipePrefab4: {fileID: 6001037395196500285, guid: 94b0478882502b44395127ce884ddd8b, type: 3}
-  pipePrefab5: {fileID: 1406841148860217931, guid: be2b02e3f0a718347b7b77650a57f223, type: 3}
-  pipePrefab6: {fileID: 2753757797381934533, guid: e827f2197145da4458e731d71ed86f35, type: 3}
-  pipePrefab7: {fileID: 4850967176911944267, guid: 98ae76e7fc12a0d499e6dc12dcdde003, type: 3}
-  pipePrefab8: {fileID: 7205694488833264783, guid: bc514dc89c062f24282941ab2c087b73, type: 3}
-  pipePrefab9: {fileID: 3851658972547593537, guid: d0ab66d8aad363340a81c49fd07408a4, type: 3}
-  birdAbove: {fileID: 7306969660908103225, guid: 9ee7aaa38db9c0f4bbc5ffcfc2f14894, type: 3}
-  birdBelow: {fileID: 250598157683088351, guid: fa15cb1dc9e75f043b9a9000084ee786, type: 3}
-  birdBehind: {fileID: 4198480367214371714, guid: 474a9844aa812c54a987357c61b6da4d, type: 3}
-  birdInFront: {fileID: 955026037471543973, guid: d90b57422dc8d764d91d86c47683bbaa, type: 3}
-  spawnRate: 2
-  difficulty2: 20
+  obstacleDif1:
+  - {fileID: 5289608725481155218, guid: 809fbeabc57760141be765ffffff82d9, type: 3}
+  - {fileID: 2889965787946329287, guid: 23688af77a7e7b34cbd5623aa8eddf12, type: 3}
+  - {fileID: 4159533258137768669, guid: cd1a8352801f6974e9c2675ea6d688dc, type: 3}
+  - {fileID: 7910393577703408362, guid: 3868b2aaef7469b429b0b2500e50fd58, type: 3}
+  - {fileID: 3446002614482399346, guid: 02772e47b1352ce478d168c09b518a85, type: 3}
+  - {fileID: 2993168619415278673, guid: b2c514a8e176d1244ac2fdb64217b9d0, type: 3}
+  - {fileID: 3255713197910539317, guid: dfcaa2feda033924599d2781aba2a258, type: 3}
+  - {fileID: 7219116649628970678, guid: 55c39181b3be91341b817a3aff4b9290, type: 3}
+  - {fileID: 142594855476425978, guid: bcebef7844c5d494ea43b90cb3d23f4d, type: 3}
+  - {fileID: 4367844808418336473, guid: 0547139bfa75bf64f898d2a8ce7963f9, type: 3}
+  - {fileID: 5678500199500464944, guid: d9212e2b19369894cba07a61aa9fca40, type: 3}
+  - {fileID: 1403829120804417543, guid: bcbcea74408f0c04bbad511f3890566c, type: 3}
+  - {fileID: 7553892191730780280, guid: e363353790b092144bd075db240278c8, type: 3}
+  - {fileID: 4934028972710089041, guid: ad7a35db33a02a54b87e2018e0fbb3ea, type: 3}
+  - {fileID: 4690569798240286496, guid: dc9007f0b4ef7e649b721a21e9063020, type: 3}
+  - {fileID: 4092896488864073451, guid: b5cade7728554764f9759e48940fbd15, type: 3}
+  - {fileID: 5240070682204930521, guid: 114beb99c055f0f45a5b55e3992fdc34, type: 3}
+  - {fileID: 8190597536057102280, guid: 4f416ffeb2e153f49a587a6ac6ab3856, type: 3}
+  - {fileID: 3571145296802726556, guid: 9e06fb9d4cf5f8c47be75a92a4d09752, type: 3}
+  - {fileID: 642597729876663105, guid: 3332e90d08abff945ac2a9b8a543f4e3, type: 3}
+  - {fileID: 5016316337014366881, guid: 73bfc93dfc814d14d8dbecc5ab9200ee, type: 3}
+  - {fileID: 4319474456627972689, guid: 93f416034e9232948858f5209fd80663, type: 3}
+  - {fileID: 4138124647319548306, guid: 6a29e0b92b8d4324cac6db5122bb72ae, type: 3}
+  - {fileID: 1943564042250335881, guid: bb94ed26754fd394a846bd253ad14c99, type: 3}
+  - {fileID: 3410845477676980382, guid: 548054a1a64927840ab3ac9a31a2ffa5, type: 3}
+  - {fileID: 6956657629144924780, guid: df91ed56aaf6d8649ba443e44fd683dc, type: 3}
+  - {fileID: 3583673123781242511, guid: d22f7be77a431b845ab74a3d23e91464, type: 3}
+  - {fileID: 1247630577974590570, guid: eb228d94b8edd7b4f9855b766b27b277, type: 3}
+  - {fileID: 2891723508907031946, guid: d45d74c56c6be4f479760c8562da30de, type: 3}
+  - {fileID: 126396014471097162, guid: 33d6fecb21c195d469c1a79a24931ce6, type: 3}
+  - {fileID: 8671850649844499907, guid: e4032ae3b60aadd459f39babe525d947, type: 3}
+  - {fileID: 8673625695590220297, guid: 5eb9faa204ede9343bf52a633fa5e772, type: 3}
+  - {fileID: 2936015545026886853, guid: 3c292647cf4265246b7b70852865b48c, type: 3}
+  - {fileID: 7077533919964388920, guid: b158edb2cb5cc8d46a10eba70ef7f892, type: 3}
+  - {fileID: 3623730044450905039, guid: ed23564c6ca624743a557e1441e3a9bb, type: 3}
+  - {fileID: 8572220582462308061, guid: 62185cc2dda8cde45a3c1b0419db4980, type: 3}
+  dif1Prob: 70
+  obstacleDif2:
+  - {fileID: 7306969660908103225, guid: 9ee7aaa38db9c0f4bbc5ffcfc2f14894, type: 3}
+  - {fileID: 250598157683088351, guid: fa15cb1dc9e75f043b9a9000084ee786, type: 3}
+  dif2Prob: 15
+  obstacleDif3:
+  - {fileID: 4198480367214371714, guid: 474a9844aa812c54a987357c61b6da4d, type: 3}
+  - {fileID: 955026037471543973, guid: d90b57422dc8d764d91d86c47683bbaa, type: 3}
+  dif3Prob: 15
+  spawnRate: 20
+  difficulty2: 5
+  difficulty3: 80
   spawnBirds: 0
 --- !u!4 &807356871
 Transform:
@@ -1006,9 +1040,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42ccf954b57bb9841a22c92c0fb831d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0
+  gameOver: 0
   scoreText: {fileID: 1248481162}
   timerText: {fileID: 767683190}
   gameOverText: {fileID: 1337581536}
+  speed: 5
   difficulty2: 7
   maxSpeedModifier: 8
   stepSize: 2
@@ -1685,7 +1722,7 @@ SpriteRenderer:
   m_Size: {x: 12.01, y: 1.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1501428383
@@ -1981,7 +2018,7 @@ SpriteRenderer:
   m_Size: {x: 12.01, y: 1.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1697641004
@@ -2110,7 +2147,7 @@ SpriteRenderer:
   m_Size: {x: 12.01, y: 1.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1811742213
