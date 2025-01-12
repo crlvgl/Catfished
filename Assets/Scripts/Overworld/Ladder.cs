@@ -10,6 +10,10 @@ public class Ladder : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        if (player == null)
+        {
+            player = GameObject.Find("Player");
+        }
         playerBody = player.GetComponent<Rigidbody2D>();
         startGrav = playerBody.gravityScale;
     }
