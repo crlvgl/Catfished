@@ -1120,6 +1120,8 @@ MonoBehaviour:
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
   player: {fileID: 0}
+  moveCharacterAfterLoad: 0
+  playerPositionAfterLoad: 0
 --- !u!61 &545685381
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2399,6 +2401,8 @@ MonoBehaviour:
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
   player: {fileID: 0}
+  moveCharacterAfterLoad: 1
+  playerPositionAfterLoad: -8.42
 --- !u!61 &1007388825
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2925,6 +2929,8 @@ MonoBehaviour:
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
   player: {fileID: 0}
+  moveCharacterAfterLoad: 1
+  playerPositionAfterLoad: 9.717
 --- !u!61 &1218420893
 BoxCollider2D:
   m_ObjectHideFlags: 0

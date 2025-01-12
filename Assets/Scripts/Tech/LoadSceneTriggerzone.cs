@@ -26,6 +26,10 @@ public class LoadSceneTriggerzone : MonoBehaviour
 
     public GameObject player;
 
+    public bool moveCharacterAfterLoad = false;
+    [Tooltip("Move the character after the scene has been loaded to a specific position (e.g. a spawner); float represents the x position")]
+    public float playerPositionAfterLoad = 0f;
+
     private bool canLoad = false;
     private bool loading = false;
 
@@ -109,6 +113,12 @@ public class LoadSceneTriggerzone : MonoBehaviour
         }
         
         staticBackbone.sceneToLoad = scenePath;
+
+        if (moveCharacterAfterLoad)
+        {
+            staticBackbone.moveCharacterNow = true;
+            staticBackbone.playerPositionX = playerPositionAfterLoad;
+        }
 
         yield return new WaitForSeconds(waitTime);
 
