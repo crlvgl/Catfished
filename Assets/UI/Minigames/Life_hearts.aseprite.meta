@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3b8222da6e266d042a62ffa3bf33e22e
+guid: 7a40e07ec96fa5c46861d5fd31b474c2
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -73,31 +73,31 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638722966151456848
+  platformSettingsDirtyTick: 638722952111299259
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: TEST grau
+  - name: Layer 3 - Merged
     originalName: 
-    pivot: {x: 0.46666664, y: -0.11764707}
+    pivot: {x: 0, y: -0.23076925}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 30
-      height: 34
-    spriteID: a6725b9860bebcb48a1e8dd5c105f8e6
+      width: 18
+      height: 26
+    spriteID: e836b2d66437695448dc3d8800b35f6d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,25 +142,64 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 4}
+    uvTransform: {x: -14, y: -2}
+  - name: Layer 4 - Merged
+    originalName: 
+    pivot: {x: 1, y: -0.26086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 30
+      y: 4
+      width: 18
+      height: 23
+    spriteID: 1df276951f4fc094ea89dce5c63bfc2a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 30, y: -2}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 666327347
-    name: TEST grau
-    layerFlags: 0
+    guid: -1241853483
+    name: Layer 3 - Merged
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: TEST grau
+    - name: Layer 3 - Merged
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
-        x: 7
-        y: 4
-        width: 30
-        height: 34
-      spriteId: a6725b9860bebcb48a1e8dd5c105f8e6
+        x: 0
+        y: 0
+        width: 36
+        height: 36
+      spriteId: e836b2d66437695448dc3d8800b35f6d
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: 58246485
+    name: Layer 4 - Merged
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 4 - Merged
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 36
+        height: 36
+      spriteId: 1df276951f4fc094ea89dce5c63bfc2a
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -203,4 +242,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 42, y: 40}
+  canvasSize: {x: 36, y: 36}
