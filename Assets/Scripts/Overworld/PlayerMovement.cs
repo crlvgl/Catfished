@@ -70,7 +70,7 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            body.linearVelocity = new Vector2(horizontal * speed, vertical * speed);
+            body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
         }
         if (open)
         {
