@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: abebcbd9083ad374f86dbf07e4c853fc
+guid: 19f2c24039a01f24f80f493e36365c6c
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -73,31 +73,31 @@ ScriptedImporter:
   previousAsepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 1
     importHiddenLayers: 0
-    layerImportMode: 1
+    layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638700150404988840
+  platformSettingsDirtyTick: 638722544592442745
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Blasen
+  - name: Layer 1
     originalName: 
-    pivot: {x: 1.7894738, y: 0.14705889}
+    pivot: {x: -1.1363636, y: -2.75}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 38
-      height: 34
-    spriteID: 059b700c21b015b468842c594ff7ba99
+      width: 66
+      height: 48
+    spriteID: 30d50411d6734f6448022ca6840b4af7
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,17 +142,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -88, y: -81}
+    uvTransform: {x: -231, y: -128}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -907465253
-    name: Blasen
-    layerFlags: 0
+    guid: 1317222744
+    name: Layer 1
+    layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Bubbles
+    - name: Layer 1
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -160,7 +160,7 @@ ScriptedImporter:
         y: 0
         width: 320
         height: 180
-      spriteId: 059b700c21b015b468842c594ff7ba99
+      spriteId: 30d50411d6734f6448022ca6840b4af7
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -182,7 +182,7 @@ ScriptedImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
     crunchedCompression: 0
