@@ -13,7 +13,14 @@ public class LoadSceneTriggerzone : MonoBehaviour
     public float waitTime = 0.2f;
 
     public bool moveCharacter = false;
-    public bool moveCharacterRight = false;
+    public enum Direction
+    {
+        Left,
+        Right,
+        Up,
+        Down
+    }
+    public Direction moveCharacterDirection;
     public GameObject[] restraintCollider;
     private bool moveCharacterNow = false;
     public bool fadeToBlack = false;
@@ -56,13 +63,20 @@ public class LoadSceneTriggerzone : MonoBehaviour
 
         if (moveCharacterNow)
         {
-            if (moveCharacterRight)
+            switch (moveCharacterDirection)
             {
-                player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x + 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
-            }
-            else
-            {
-                player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x - 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                case Direction.Right:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x + 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    break;
+                case Direction.Left:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x - 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    break;
+                case Direction.Up:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x, player.transform.position.y + 20, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    break;
+                case Direction.Down:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x, player.transform.position.y - 20, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    break;
             }
             cam.transform.position = camPos;
         }

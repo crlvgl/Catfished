@@ -352,6 +352,7 @@ GameObject:
   - component: {fileID: 197922213}
   - component: {fileID: 197922212}
   - component: {fileID: 197922215}
+  - component: {fileID: 197922216}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -402,7 +403,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 2.356875
+  orthographic size: 1.8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -427,7 +428,7 @@ Transform:
   m_GameObject: {fileID: 197922211}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.99, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -478,6 +479,22 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &197922216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197922211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b9de2c116452743a332ed037095cc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  deadZoneLeft: -0.99
+  deadZoneRight: 0.99
+  followPlayer: 1
 --- !u!1 &227527783
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,9 +530,12 @@ MonoBehaviour:
   loadingScreenPath: Assets/Scenes/LoadingScreen.unity
   pressedKey: 32
   waitTime: 1
-  moveCharacter: 0
-  moveCharacterRight: 0
-  restraintCollider: []
+  moveCharacter: 1
+  moveCharacterDirection: 2
+  restraintCollider:
+  - {fileID: 2063700283}
+  - {fileID: 1946532182}
+  - {fileID: 127578422}
   fadeToBlack: 1
   timeBeforeFade: 0.3
   blackScreen: {fileID: 107035985}

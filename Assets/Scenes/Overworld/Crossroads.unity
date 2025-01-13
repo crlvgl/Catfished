@@ -968,7 +968,7 @@ MonoBehaviour:
   pressedKey: 32
   waitTime: 1
   moveCharacter: 1
-  moveCharacterRight: 1
+  moveCharacterDirection: 1
   restraintCollider:
   - {fileID: 1513171330}
   fadeToBlack: 1
@@ -1246,9 +1246,11 @@ MonoBehaviour:
   pressedKey: 32
   waitTime: 1
   moveCharacter: 0
-  moveCharacterRight: 0
+  moveCharacterDirection: 2
   restraintCollider:
-  - {fileID: 0}
+  - {fileID: 1513171330}
+  - {fileID: 554122860}
+  - {fileID: 665395686}
   fadeToBlack: 1
   timeBeforeFade: 0.3
   blackScreen: {fileID: 855215971}
@@ -1542,7 +1544,7 @@ MonoBehaviour:
   pressedKey: 32
   waitTime: 1
   moveCharacter: 1
-  moveCharacterRight: 0
+  moveCharacterDirection: 0
   restraintCollider:
   - {fileID: 554122860}
   fadeToBlack: 1

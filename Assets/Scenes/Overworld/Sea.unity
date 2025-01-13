@@ -423,7 +423,7 @@ MonoBehaviour:
   pressedKey: 32
   waitTime: 1
   moveCharacter: 1
-  moveCharacterRight: 1
+  moveCharacterDirection: 1
   restraintCollider:
   - {fileID: 177657877}
   - {fileID: 182227560}
