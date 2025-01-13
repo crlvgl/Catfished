@@ -1,0 +1,713 @@
+fileFormatVersion: 2
+guid: c48e35a9978caef499d16b0f9fabf2ab
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 0
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 0
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 0
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638724071047181354
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Himmel
+    originalName: 
+    pivot: {x: 0.5, y: -1.2651935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 328
+      width: 320
+      height: 181
+    spriteID: 887d8e9bb9a36c245aea96b1330f27e0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 99}
+  - name: Berge-Wasser-Gras
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 320
+      height: 316
+    spriteID: a88f3b57cb76c2e4f8be4f80b93162a6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: "Korallengr\xC3\xBCn"
+    originalName: 
+    pivot: {x: 4.8064513, y: -0.125}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 378
+      width: 31
+      height: 24
+    spriteID: b399a7af00f0ce049ac6a8e1365def14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 321, y: 375}
+  - name: Koralle gelb
+    originalName: 
+    pivot: {x: 3.65625, y: -0.09090909}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 442
+      width: 32
+      height: 22
+    spriteID: a363abc865866fe439a11589476539e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 289, y: 440}
+  - name: Koralle blau
+    originalName: 
+    pivot: {x: 3.030303, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 427
+      y: 328
+      width: 33
+      height: 19
+    spriteID: 3ee22feb7aa2f394295766214bae97db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 367, y: 328}
+  - name: Koralle orange
+    originalName: 
+    pivot: {x: 4.4827585, y: -0.36363637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 472
+      width: 29
+      height: 22
+    spriteID: d1298f02bb46a6e44baf69a92117e7fa
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 302, y: 464}
+  - name: Koralle pink
+    originalName: 
+    pivot: {x: 6.4, y: -0.2}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 444
+      width: 25
+      height: 40
+    spriteID: 177e7520b4b16084a9fa530fab413a82
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 374, y: 436}
+  - name: Koralle lila
+    originalName: 
+    pivot: {x: 5.3333335, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 410
+      width: 30
+      height: 24
+    spriteID: 3a0ef5b57d727df448f71d00cbe296fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 410}
+  - name: Koralle rot
+    originalName: 
+    pivot: {x: -3.7058825, y: -0.11904761}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 328
+      width: 34
+      height: 42
+    spriteID: fb7aaae9e2291b24294908b603a49998
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 46, y: 323}
+  - name: Koralle gelb rechts
+    originalName: 
+    pivot: {x: -2.7368422, y: -0.6333333}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 406
+      width: 38
+      height: 30
+    spriteID: df3ba9ff63571644eb6b6d22325333e1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 387}
+  - name: "Koralle gr\xC3\xBCn rechts"
+    originalName: 
+    pivot: {x: -2.1555557, y: -0.2580645}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 328
+      width: 45
+      height: 31
+    spriteID: d491d4ff4298a6a439e05025a69fe5e7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 117, y: 320}
+  - name: "Koralle t\xC3\xBCrkis"
+    originalName: 
+    pivot: {x: -1.8947371, y: -0.2580645}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 374
+      y: 367
+      width: 38
+      height: 31
+    spriteID: 073e4697294f5e54b860738557008a84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 142, y: 359}
+  - name: Titel
+    originalName: 
+    pivot: {x: 0.48044693, y: -2.302521}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 517
+      width: 179
+      height: 119
+    spriteID: 07b75dcd3496a664ca7f8b5df9959875
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -70, y: 243}
+  - name: Schilder
+    originalName: 
+    pivot: {x: 0.50508475, y: -1.3137255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 191
+      y: 517
+      width: 295
+      height: 51
+    spriteID: c05292406939489479eea03cdbd0f778
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 180, y: 450}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -185446514
+    name: Himmel
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Himmel
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: 887d8e9bb9a36c245aea96b1330f27e0
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 1
+    guid: -124511388
+    name: Berge-Wasser-Gras
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Berge-Wasser-Gras
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: a88f3b57cb76c2e4f8be4f80b93162a6
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 2
+    guid: 1969223192
+    name: "Korallengr\xC3\xBCn"
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: "Korallengr\xC3\xBCn"
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: b399a7af00f0ce049ac6a8e1365def14
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 3
+    guid: -2096877851
+    name: Koralle gelb
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Koralle gelb
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: a363abc865866fe439a11589476539e8
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 4
+    guid: 1318060312
+    name: Koralle blau
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Koralle blau
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: 3ee22feb7aa2f394295766214bae97db
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 5
+    guid: -1905035185
+    name: Koralle orange
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Koralle orange
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: d1298f02bb46a6e44baf69a92117e7fa
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 6
+    guid: -959169742
+    name: Koralle pink
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Koralle pink
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: 177e7520b4b16084a9fa530fab413a82
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 7
+    guid: 1576656775
+    name: Koralle lila
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Koralle lila
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: 3a0ef5b57d727df448f71d00cbe296fb
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 8
+    guid: 357580119
+    name: Koralle rot
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Koralle rot
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: fb7aaae9e2291b24294908b603a49998
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 9
+    guid: -1589638836
+    name: Koralle gelb rechts
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Koralle gelb rechts
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: df3ba9ff63571644eb6b6d22325333e1
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 10
+    guid: -1068181181
+    name: "Koralle gr\xC3\xBCn rechts"
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: "Koralle gr\xC3\xBCn rechts"
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: d491d4ff4298a6a439e05025a69fe5e7
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 11
+    guid: 737204651
+    name: "Koralle t\xC3\xBCrkis"
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: "Koralle t\xC3\xBCrkis"
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: 073e4697294f5e54b860738557008a84
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 12
+    guid: -291177582
+    name: Titel
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Titel
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: 07b75dcd3496a664ca7f8b5df9959875
+    linkedCells: []
+    parentIndex: -1
+  - layerIndex: 13
+    guid: -752604407
+    name: Schilder
+    layerFlags: 3
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Schilder
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 320
+        height: 410
+      spriteId: c05292406939489479eea03cdbd0f778
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: Default
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 320, y: 410}
