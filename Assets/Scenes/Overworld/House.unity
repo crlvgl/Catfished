@@ -304,8 +304,8 @@ MonoBehaviour:
   blackScreen: {fileID: 1196561489}
   fadeSpeed: 1
   player: {fileID: 0}
-  moveCharacterAfterLoad: 0
-  playerPositionAfterLoad: 0
+  moveCharacterAfterLoad: 1
+  playerPositionAfterLoad: 2.95
 --- !u!61 &546592788
 BoxCollider2D:
   m_ObjectHideFlags: 0
