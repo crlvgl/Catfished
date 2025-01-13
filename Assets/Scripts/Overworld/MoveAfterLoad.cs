@@ -36,9 +36,9 @@ public class MoveAfterLoad : MonoBehaviour
                     Camera.main.transform.position = new Vector3(5.94f, 0f, -10f);
                     Camera.main.GetComponent<CameraFollowPlayer>().followPlayer = true;
                 }
-
-                camFollowPlayer = true;
             }
+
+            camFollowPlayer = true;
         }
 
         else
