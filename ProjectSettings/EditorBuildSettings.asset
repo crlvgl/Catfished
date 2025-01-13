@@ -41,6 +41,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Overworld/CloudLake.unity
     guid: 3d2047a6766e0034f86c130d238a8f18
+  - enabled: 1
+    path: Assets/Scenes/Overworld/LavaCave.unity
+    guid: 9418aa5010ee289459f4ab60fd929880
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
