@@ -57,6 +57,8 @@ public class LoadSceneTriggerzone : MonoBehaviour
             canLoad = false;
             cam = Camera.main;
             camPos = cam.transform.position;
+            Debug.Log("Saving game...");
+            SaveLoad.SaveGame();
             Debug.Log("Loading scene: " + scenePath);
             StartCoroutine(LoadScene());
         }
