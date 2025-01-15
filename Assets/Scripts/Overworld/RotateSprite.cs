@@ -27,5 +27,13 @@ public class RotateSprite : MonoBehaviour
         {
             this.transform.rotation = Quaternion.Euler(0, 0, -t);
         }
+
+        if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
+        {
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
+            Destroy(GameObject.Find("FishAnim"));
+            Destroy(this.gameObject);
+        }
+        
     }
 }

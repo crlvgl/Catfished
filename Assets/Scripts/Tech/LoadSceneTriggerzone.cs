@@ -4,6 +4,9 @@ using UnityEngine.SceneManagement;
 
 public class LoadSceneTriggerzone : MonoBehaviour
 {
+    public GameObject interactionIcon;
+    public float fadeModifier = 1.0f;
+
     [Tooltip("The path to the scene to load")]
     public string scenePath = "Assets/Scenes/exampleScene.unity";
     [Tooltip("The path to the loading screen scene. DO NOT TOUCH UNLESS YOU KNOW WHAT YOU'RE DOING")]
@@ -109,6 +112,10 @@ public class LoadSceneTriggerzone : MonoBehaviour
     {
         // TODO
         // add some pop-up text to show the player that they can press a key to load the scene
+        if (other.gameObject.name == "Player")
+        {
+            StartCoroutine(IncreaseOpacity());
+        }
     }
 
     void OnTriggerStay2D(Collider2D other)
@@ -124,7 +131,31 @@ public class LoadSceneTriggerzone : MonoBehaviour
     {
         // TODO
         // remove the pop-up text
+        if (other.gameObject.name == "Player")
+        {
+            StartCoroutine(DecreaseOpacity());
+        }
         canLoad = false;
+    }
+
+    IEnumerator IncreaseOpacity()
+    {
+        interactionIcon.SetActive(true);
+        while (interactionIcon.GetComponent<SpriteRenderer>().color.a < 1)
+        {
+            interactionIcon.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, interactionIcon.GetComponent<SpriteRenderer>().color.a + Time.deltaTime * fadeModifier);
+            yield return null;
+        }
+    }
+
+    IEnumerator DecreaseOpacity()
+    {
+        while (interactionIcon.GetComponent<SpriteRenderer>().color.a > 0)
+        {
+            interactionIcon.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, interactionIcon.GetComponent<SpriteRenderer>().color.a - Time.deltaTime * fadeModifier);
+            yield return null;
+        }
+        interactionIcon.SetActive(false);
     }
 
     IEnumerator LoadScene()

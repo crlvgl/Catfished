@@ -6,6 +6,7 @@ public class UpdateInventory : MonoBehaviour
     public float waitBeforeAnimation = 0.5f;
     public GameObject circleAnim;
     public string pathToFishSprite;
+    public string fishName;
 
     void Start()
     {
@@ -24,6 +25,7 @@ public class UpdateInventory : MonoBehaviour
 
     IEnumerator GotFish()
     {
+        GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(waitBeforeAnimation);
         circleAnim.SetActive(true);
         GameObject fish = new GameObject("FishAnim");
@@ -31,6 +33,11 @@ public class UpdateInventory : MonoBehaviour
         fish.AddComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(pathToFishSprite);
         fish.GetComponent<SpriteRenderer>().sortingOrder = circleAnim.GetComponent<SpriteRenderer>().sortingOrder + 1;
         fish.transform.position = circleAnim.transform.position;
+        fish.transform.localScale = new Vector3(2f, 2f, 2f);
+        // TODO
+        // Add the correct fish to the inventory
+        // check the fishName and find the corresponding bool in the Inventory.cs
+        // Optionally, auto save the game
     }
 
     IEnumerator NoFish()

@@ -1029,6 +1029,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b321e6e2b1256ef4fafdebc9f5423a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 1743073172}
+  fadeModifier: 1
   scenePath: Assets/Scenes/Overworld/FieldTest.unity
   loadingScreenPath: Assets/Scenes/LoadingScreen.unity
   pressedKey: 32
@@ -1307,6 +1309,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b321e6e2b1256ef4fafdebc9f5423a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 1743073172}
+  fadeModifier: 1
   scenePath: Assets/Scenes/Overworld/Sea.unity
   loadingScreenPath: Assets/Scenes/LoadingScreen.unity
   pressedKey: 32
@@ -1662,6 +1666,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b321e6e2b1256ef4fafdebc9f5423a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 1743073172}
+  fadeModifier: 1
   scenePath: Assets/Scenes/Overworld/MushroomCave.unity
   loadingScreenPath: Assets/Scenes/LoadingScreen.unity
   pressedKey: 32
@@ -1677,6 +1683,11 @@ MonoBehaviour:
   player: {fileID: 0}
   moveCharacterAfterLoad: 1
   playerPositionAfterLoad: 4.361
+--- !u!1 &1743073172 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4019399574160827105, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
+  m_PrefabInstance: {fileID: 1015665487}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1836786535
 PrefabInstance:
   m_ObjectHideFlags: 0

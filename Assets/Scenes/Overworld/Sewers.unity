@@ -526,6 +526,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b321e6e2b1256ef4fafdebc9f5423a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  interactionIcon: {fileID: 875404010}
+  fadeModifier: 5
   scenePath: Assets/Scenes/Overworld/FieldTest.unity
   loadingScreenPath: Assets/Scenes/LoadingScreen.unity
   pressedKey: 32
@@ -927,6 +929,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
+--- !u!1 &875404010 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4019399574160827105, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
+  m_PrefabInstance: {fileID: 875404009}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &920244009
 GameObject:
   m_ObjectHideFlags: 0
