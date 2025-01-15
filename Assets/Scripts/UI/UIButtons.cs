@@ -27,10 +27,20 @@ public class UIButtons : MonoBehaviour
     public string pathToTitleScreen = "Assets/Scenes/StartScreen.unity";
     [Header("Optional Settings")]
     [Tooltip("Time to wait before loading the scene; if 0, loads immediately")]
+
+    public AudioSource sourceForClick;
+
+    public AudioClip clipForClick;
     public float waitTime = 0.1f;
 
     [Header("Sprite Settings")]
     public Sprite mouseOver;
+
+    public AudioSource sourceForHover;
+
+    public AudioClip clipForHover;
+
+
     private SpriteRenderer spriteRenderer;
     private Sprite defaultSprite;
 
@@ -42,12 +52,15 @@ public class UIButtons : MonoBehaviour
     }
 
     void OnMouseEnter()
-    {
+    {   
+        sourceForHover.PlayOneShot(clipForHover);
         spriteRenderer.sprite = mouseOver;
+
     }
 
     void OnMouseDown()
-    {
+    {   
+        sourceForClick.PlayOneShot(clipForClick);
         switch (functionOfButton)
         {
             case "load":
