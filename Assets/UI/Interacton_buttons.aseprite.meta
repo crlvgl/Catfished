@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0ee3f3937310e314583f77c6d8e57ce3
+guid: e5d5f2ebb17ed5941bda7ac8a34fa703
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,10 +72,10 @@ ScriptedImporter:
     applyGammaDecoding: 0
   previousAsepriteImporterSettings:
     fileImportMode: 1
-    importHiddenLayers: 0
+    importHiddenLayers: 1
     layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -85,10 +85,10 @@ ScriptedImporter:
     addShadowCasters: 0
   asepriteImporterSettings:
     fileImportMode: 1
-    importHiddenLayers: 0
+    importHiddenLayers: 1
     layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638725775603892645
+  platformSettingsDirtyTick: 638725778039560652
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Layer 4
+  - name: Layer 1 - Merged
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 321
-      height: 321
-    spriteID: 76dd10836800f1e47afceb124417dbf9
+      width: 16
+      height: 16
+    spriteID: 799a297ea2f6e4e42b533c312772d92c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,19 +143,19 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: Layer 5
+  - name: Layer 1 - Merged-Copy
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 333
-      width: 321
-      height: 321
-    spriteID: 21fb58652f02821478aaca5cfa0462eb
+      y: 28
+      width: 16
+      height: 16
+    spriteID: 99e31bb7e23240e4db92dcdebd6ebe47
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,20 +163,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 333}
-  - name: Layer 4-Copy - Merged
+    uvTransform: {x: 4, y: 28}
+  - name: Layer 1 - Merged-Copy-Copy
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5555556, y: -0.44444445}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 662
-      width: 321
-      height: 321
-    spriteID: 165e190065145ce43ac7059d6c644012
+      y: 100
+      width: 9
+      height: 9
+    spriteID: 5b40334bf19823248b3189cc6cd5691e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -184,63 +184,198 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 662}
+    uvTransform: {x: 1, y: 96}
+  - name: Layer 2-Copy-Copy-Copy-Copy
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 52
+      width: 16
+      height: 16
+    spriteID: 7e8ac2c51bcf6b545a618c3501a1ed95
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 52}
+  - name: Layer 2-Copy-Copy-Copy-Copy-Copy
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 76
+      width: 16
+      height: 16
+    spriteID: 6b3e149bfcd9c7449a8c007e18e1e0a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 76}
+  - name: Layer 2-Copy-Copy-Copy-Copy-Copy-Copy
+    originalName: 
+    pivot: {x: 0.44444445, y: -0.44444445}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 4
+      width: 9
+      height: 9
+    spriteID: a0692b75ec763d84bbb21a551f6f31f2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 24, y: 0}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1317223935
-    name: Layer 4
-    layerFlags: 1
-    layerType: 0
+    guid: -1272847017
+    name: Group 4
+    layerFlags: 3
+    layerType: 1
     blendMode: 0
-    cells:
-    - name: Layer 4
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 321
-        height: 321
-      spriteId: 76dd10836800f1e47afceb124417dbf9
+    cells: []
     linkedCells: []
     parentIndex: -1
   - layerIndex: 1
-    guid: 1317224333
-    name: Layer 5
+    guid: -301961542
+    name: Layer 1 - Merged
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 5
+    - name: Layer 1 - Merged
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 321
-        height: 321
-      spriteId: 21fb58652f02821478aaca5cfa0462eb
+        width: 16
+        height: 16
+      spriteId: 799a297ea2f6e4e42b533c312772d92c
     linkedCells: []
-    parentIndex: -1
+    parentIndex: 0
   - layerIndex: 2
-    guid: -256268970
-    name: Layer 4-Copy - Merged
-    layerFlags: 3
+    guid: -1579963195
+    name: Layer 1 - Merged-Copy
+    layerFlags: 2
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 4-Copy - Merged
+    - name: Layer 1 - Merged-Copy
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 321
-        height: 321
-      spriteId: 165e190065145ce43ac7059d6c644012
+        width: 16
+        height: 16
+      spriteId: 99e31bb7e23240e4db92dcdebd6ebe47
+    linkedCells: []
+    parentIndex: 0
+  - layerIndex: 3
+    guid: -2127553624
+    name: Layer 1 - Merged-Copy-Copy
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 1 - Merged-Copy-Copy
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      spriteId: 5b40334bf19823248b3189cc6cd5691e
+    linkedCells: []
+    parentIndex: 0
+  - layerIndex: 4
+    guid: -1272847410
+    name: Group 5
+    layerFlags: 2
+    layerType: 1
+    blendMode: 0
+    cells: []
     linkedCells: []
     parentIndex: -1
+  - layerIndex: 5
+    guid: -270991436
+    name: Layer 2-Copy-Copy-Copy-Copy
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 2-Copy-Copy-Copy-Copy
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      spriteId: 7e8ac2c51bcf6b545a618c3501a1ed95
+    linkedCells: []
+    parentIndex: 4
+  - layerIndex: 6
+    guid: 130717223
+    name: Layer 2-Copy-Copy-Copy-Copy-Copy
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 2-Copy-Copy-Copy-Copy-Copy
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      spriteId: 6b3e149bfcd9c7449a8c007e18e1e0a9
+    linkedCells: []
+    parentIndex: 4
+  - layerIndex: 7
+    guid: 1343144678
+    name: Layer 2-Copy-Copy-Copy-Copy-Copy-Copy
+    layerFlags: 2
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Layer 2-Copy-Copy-Copy-Copy-Copy-Copy
+      frameIndex: 0
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      spriteId: a0692b75ec763d84bbb21a551f6f31f2
+    linkedCells: []
+    parentIndex: 4
   platformSettings:
   - name: Default
     overridden: 0
@@ -281,4 +416,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 321, y: 321}
+  canvasSize: {x: 16, y: 16}
