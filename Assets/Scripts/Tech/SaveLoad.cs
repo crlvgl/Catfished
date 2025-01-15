@@ -7,13 +7,16 @@ public class SaveLoad : MonoBehaviour
 {
     public static SaveLoad _instance;
 
-    public static void SaveGame()
+    public static void SaveGame(bool savePlayerPosition = true)
     {
         // player position
-        if (GameObject.Find("Player") != null)
+        if (savePlayerPosition)
         {
-            PlayerPrefs.SetString("currentScene", SceneManager.GetActiveScene().name);
-            PlayerPrefs.SetFloat("playerPositionX", GameObject.Find("Player").transform.position.x);
+            if (GameObject.Find("Player") != null)
+            {
+                PlayerPrefs.SetString("currentScene", SceneManager.GetActiveScene().name);
+                PlayerPrefs.SetFloat("playerPositionX", GameObject.Find("Player").transform.position.x);
+            }
         }
 
         // fishies

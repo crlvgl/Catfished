@@ -49,5 +49,8 @@ TagManager:
   - name: arrows
     uniqueID: 168220905
     locked: 0
+  - name: Foreground
+    uniqueID: 2877596881
+    locked: 0
   m_RenderingLayers:
   - Default

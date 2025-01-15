@@ -47,6 +47,12 @@ public class MoveClouds : MonoBehaviour
 
         transform.position = new Vector3(startpos + distance, this.transform.position.y, this.transform.position.z);
 
+        // if (this.gameObject.name == "Clouds")
+        // {
+        //     Debug.Log(this.transform.position.x);
+        //     Debug.Log(this.transform.position.x > destroyPoint);
+        // }
+
         if (moveRight && transform.position.x > destroyPoint)
         {
             Destroy(this.gameObject);

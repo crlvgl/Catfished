@@ -13,7 +13,14 @@ public class LoadSceneTriggerzone : MonoBehaviour
     public float waitTime = 0.2f;
 
     public bool moveCharacter = false;
-    public bool moveCharacterRight = false;
+    public enum Direction
+    {
+        Left,
+        Right,
+        Up,
+        Down
+    }
+    public Direction moveCharacterDirection;
     public GameObject[] restraintCollider;
     private bool moveCharacterNow = false;
     public bool fadeToBlack = false;
@@ -25,6 +32,7 @@ public class LoadSceneTriggerzone : MonoBehaviour
     private Vector3 camPos;
 
     public GameObject player;
+    private Animator anim;
 
     public bool moveCharacterAfterLoad = false;
     [Tooltip("Move the character after the scene has been loaded to a specific position (e.g. a spawner); float represents the x position")]
@@ -39,6 +47,7 @@ public class LoadSceneTriggerzone : MonoBehaviour
         {
             player = GameObject.Find("Player");
         }
+        anim = player.GetComponent<Animator>();
     }
 
     void Update()
@@ -46,23 +55,46 @@ public class LoadSceneTriggerzone : MonoBehaviour
         if (Input.GetKeyDown(pressedKey) && canLoad && !loading)
         {
             // Debug.Log("Button has been pressed");
+            player.GetComponent<PlayerMovement>().enabled = false;
             loading = true;
             canLoad = false;
             cam = Camera.main;
             camPos = cam.transform.position;
+            Debug.Log("Saving game...");
+            SaveLoad.SaveGame();
             Debug.Log("Loading scene: " + scenePath);
             StartCoroutine(LoadScene());
         }
 
         if (moveCharacterNow)
         {
-            if (moveCharacterRight)
+            switch (moveCharacterDirection)
             {
-                player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x + 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
-            }
-            else
-            {
-                player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x - 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                case Direction.Right:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x + 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    anim.enabled = true;
+                    anim.SetBool("Clip", false);
+                    anim.SetBool("Walk", true);
+                    break;
+                case Direction.Left:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x - 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    anim.enabled = true;
+                    anim.SetBool("Clip", false);
+                    anim.SetBool("Walk", true);
+                    player.transform.rotation = Quaternion.Euler(0, 180, 0);
+                    break;
+                case Direction.Up:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x, player.transform.position.y + 20, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    anim.enabled = true;
+                    anim.SetBool("Walk", false);
+                    anim.SetBool("Climb", true);
+                    break;
+                case Direction.Down:
+                    player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x, player.transform.position.y - 20, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
+                    anim.enabled = true;
+                    anim.SetBool("Walk", false);
+                    anim.SetBool("Climb", true);
+                    break;
             }
             cam.transform.position = camPos;
         }
