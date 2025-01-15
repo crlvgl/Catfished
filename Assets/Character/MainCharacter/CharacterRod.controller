@@ -118,7 +118,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Character
+  m_Name: CharacterRod
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Walk
@@ -258,7 +258,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 2622045472708678005, guid: 0abeb68bc443ba743816ada2532b1a6b, type: 3}
+  m_Motion: {fileID: 7592953804797544377, guid: f4921f881a4b6c248a3e3792f616b545, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -314,7 +314,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -787491762292595932, guid: 5fd0b20cfe08bb44f896c290f72fe0e2, type: 3}
+  m_Motion: {fileID: -5180059875161605248, guid: bc0ce549c61250b4facab273713ccd17, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
