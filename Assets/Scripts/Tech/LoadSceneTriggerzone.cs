@@ -55,6 +55,7 @@ public class LoadSceneTriggerzone : MonoBehaviour
         if (Input.GetKeyDown(pressedKey) && canLoad && !loading)
         {
             // Debug.Log("Button has been pressed");
+            player.GetComponent<PlayerMovement>().enabled = false;
             loading = true;
             canLoad = false;
             cam = Camera.main;
