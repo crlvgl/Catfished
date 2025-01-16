@@ -1,11 +1,12 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Rendering;
 
 public class UpdateInventory : MonoBehaviour
 {
     public float waitBeforeAnimation = 0.5f;
     public GameObject circleAnim;
-    public string pathToFishSprite;
+    public GameObject fishPrefab;
     public string fishName;
 
     void Start()
@@ -28,11 +29,10 @@ public class UpdateInventory : MonoBehaviour
         GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(waitBeforeAnimation);
         circleAnim.SetActive(true);
-        GameObject fish = new GameObject("FishAnim");
+        GameObject fish = Instantiate(fishPrefab, circleAnim.transform.position, Quaternion.identity);
         fish.SetActive(true);
-        fish.AddComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(pathToFishSprite);
-        fish.GetComponent<SpriteRenderer>().sortingOrder = circleAnim.GetComponent<SpriteRenderer>().sortingOrder + 1;
-        fish.transform.position = circleAnim.transform.position;
+        fish.name = "fishAnim";
+        fish.GetComponent<SortingGroup>().sortingOrder = circleAnim.transform.Find("Layer 5").gameObject.GetComponent<SpriteRenderer>().sortingOrder + 1;
         fish.transform.localScale = new Vector3(2f, 2f, 2f);
         // TODO
         // Add the correct fish to the inventory

@@ -65,6 +65,8 @@ public class LoadMinigame : MonoBehaviour
             yield return null;
         }
 
+        staticBackbone.sceneToReturnTo = SceneManager.GetActiveScene().path;
+
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(pathToMinigame);
         
         staticBackbone.sceneToLoad = null;

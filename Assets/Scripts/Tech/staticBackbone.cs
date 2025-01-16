@@ -8,4 +8,5 @@ public static class staticBackbone
     // Inventory
     public static bool playedMiniGame = false;
     public static bool gotFish = false;
+    public static string sceneToReturnTo;
 }

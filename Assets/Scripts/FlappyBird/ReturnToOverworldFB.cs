@@ -5,9 +5,8 @@ using UnityEngine.SceneManagement;
 public class ReturnToOverworldFB : MonoBehaviour
 {
     public KeyCode returnKey = KeyCode.E;
-    public string overworldScene = "Assets/Scenes/Overworld/ForrestTest.unity";
-    public string loadingScreenScene = "Assets/Scenes/LoadingScreen.unity";
     private ScoreFB scoreFB;
+    public int requiredScore;
 
     void Start()
     {
@@ -20,6 +19,11 @@ public class ReturnToOverworldFB : MonoBehaviour
         {
             if (Input.GetKeyDown(returnKey))
             {
+                staticBackbone.playedMiniGame = true;
+                if (scoreFB.score >= requiredScore)
+                {
+                    staticBackbone.gotFish = true;
+                }
                 StartCoroutine(LoadOverworld());
             }
         }
@@ -27,9 +31,7 @@ public class ReturnToOverworldFB : MonoBehaviour
 
     IEnumerator LoadOverworld()
     {
-        staticBackbone.sceneToLoad = overworldScene;
-
-        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(loadingScreenScene);
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(staticBackbone.sceneToReturnTo);
 
         while (!asyncLoad.isDone)
         {

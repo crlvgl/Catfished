@@ -31,7 +31,7 @@ public class RotateSprite : MonoBehaviour
         if (Input.anyKeyDown || Input.GetMouseButtonDown(0))
         {
             GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
-            Destroy(GameObject.Find("FishAnim"));
+            Destroy(GameObject.Find("fishAnim").gameObject);
             Destroy(this.gameObject);
         }
         
