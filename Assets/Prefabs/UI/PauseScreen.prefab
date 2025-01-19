@@ -151,8 +151,12 @@ MonoBehaviour:
   pathToFirstScene: Assets/Scenes/Overworld/FieldTest.unity
   pathToLoadingScreen: Assets/Scenes/LoadingScreen.unity
   pathToTitleScreen: Assets/Scenes/StartScreen.unity
+  sourceForClick: {fileID: 0}
+  clipForClick: {fileID: 0}
   waitTime: 0.1
   mouseOver: {fileID: -9207597949098312719, guid: f6adc46066d637d438b4ddc7ace72fc4, type: 3}
+  sourceForHover: {fileID: 0}
+  clipForHover: {fileID: 0}
 --- !u!1 &6762044516345917048
 GameObject:
   m_ObjectHideFlags: 0
@@ -304,8 +308,12 @@ MonoBehaviour:
   pathToFirstScene: Assets/Scenes/Overworld/FieldTest.unity
   pathToLoadingScreen: Assets/Scenes/LoadingScreen.unity
   pathToTitleScreen: Assets/Scenes/StartScreen.unity
+  sourceForClick: {fileID: 0}
+  clipForClick: {fileID: 0}
   waitTime: 0.1
   mouseOver: {fileID: 458045949633854307, guid: f6adc46066d637d438b4ddc7ace72fc4, type: 3}
+  sourceForHover: {fileID: 0}
+  clipForHover: {fileID: 0}
 --- !u!1 &6851862591301190543
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,6 +417,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c43dc6b60d52fb14f92ef3881d593db0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  followPlayer: 1
+  camera: {fileID: 0}
 --- !u!1 &7951048369211495079
 GameObject:
   m_ObjectHideFlags: 0
@@ -560,5 +570,9 @@ MonoBehaviour:
   pathToFirstScene: Assets/Scenes/Overworld/FieldTest.unity
   pathToLoadingScreen: Assets/Scenes/LoadingScreen.unity
   pathToTitleScreen: Assets/Scenes/StartScreen.unity
+  sourceForClick: {fileID: 0}
+  clipForClick: {fileID: 0}
   waitTime: 0.1
   mouseOver: {fileID: -8025381452634825220, guid: f6adc46066d637d438b4ddc7ace72fc4, type: 3}
+  sourceForHover: {fileID: 0}
+  clipForHover: {fileID: 0}
