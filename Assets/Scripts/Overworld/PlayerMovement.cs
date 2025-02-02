@@ -2,7 +2,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 
 {
-    Rigidbody2D body;
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
+    private Rigidbody2D rb;
 
     float horizontal;
     float vertical;
@@ -10,23 +12,33 @@ public class PlayerMovement : MonoBehaviour
     bool open;
     bool close;
 
-    public float speed = 5.0f;
-    public float jumpForce = 5.0f;
+    [Header("Movement Settings")]
+    public float walkSpeed = 5f;
+    public float jumpForce = 5f;
+
+
     public GameObject pauseMenu;
     public KeyCode pauseKey = KeyCode.Escape;
 
     private bool ladderExists;
     private Ladder ladder;
 
-    private Animator anim;
+
+
+    private bool isWalking;
+    private bool isClimbing;
+    private bool isFishing;
+    private float moveDirection; // -1 for left, 1 for right, 0 for no movement
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         anim = GetComponent<Animator>();
-        anim.enabled = false;
+        // anim.enabled = false;
 
-        body = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
         ladderExists = GameObject.Find("Ladder") != null;
 
         if (ladderExists)
@@ -43,53 +55,12 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!pauseMenu.activeSelf)
-        {
-            horizontal = Input.GetAxisRaw("Horizontal");
-            vertical = Input.GetAxisRaw("Vertical");
-            if (ladderExists)
-            {
-                if (ladder.isOnLadder && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
-                {
-                    anim.enabled = true;
-                    anim.SetBool("Walk", false);
-                    anim.SetBool("Fish", false);
-                    anim.SetBool("Climb", true);
-                }
-                else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-                {
-                    anim.enabled = true;
-                    anim.SetBool("Walk", true);
-                    anim.SetBool("Fish", false);
-                    anim.SetBool("Climb", false);
-                }
-                else
-                {
-                    anim.enabled = false;
-                }
-            }
-            else
-            {
-                if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
-                {
-                    anim.enabled = true;
-                    anim.SetBool("Walk", true);
-                    anim.SetBool("Fish", false);
-                }
-                else
-                {
-                    anim.enabled = false;
-                }
-            }
-            if (Input.GetKeyDown(KeyCode.A))
-            {
-                this.transform.rotation = Quaternion.Euler(0, 180, 0);
-            }
-            else if (Input.GetKeyUp(KeyCode.A))
-            {
-                this.transform.rotation = Quaternion.Euler(0, 0, 0);
-            }
-        }
+        HandleInput();
+
+        UpdateAnimator();
+
+        FlipSprite();
+
         if (Input.GetKeyDown(pauseKey))
         {
             open = true;
@@ -100,26 +71,57 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!pauseMenu.activeSelf)
         {
-            if (ladderExists)
-            {
-                if (ladder.isOnLadder == false)
-                {
-                    body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
-                }
-                else
-                {
-                    body.linearVelocity = new Vector2(horizontal * speed, vertical * speed);
-                }
-            }
-            else
-            {
-                body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
-            }
+            MoveCharacter();
         }
         if (open)
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
             open = false;
         }
+    }
+    void HandleInput()
+    {
+
+        float horizontalInput = Input.GetAxis("Horizontal");
+
+        moveDirection = horizontalInput;
+
+        isWalking = Mathf.Abs(horizontalInput) > 0.1f;
+        isFishing = Input.GetKeyDown(KeyCode.Space);
+    }
+    void UpdateAnimator()
+    {
+        if (!pauseMenu.activeSelf)
+        {
+            
+
+            anim.SetBool("isWalking", isWalking);
+            anim.SetBool("isClimbing", isClimbing);
+
+            if (isFishing)
+            {
+                anim.SetTrigger("isFishing");
+            }
+        }
+        
+    }
+    void FlipSprite()
+    {
+        if (moveDirection > 0.1f)
+        {
+            spriteRenderer.flipX = false;
+        }
+        else if (moveDirection < -0.1f)
+        {
+            spriteRenderer.flipX = true;
+        }
+    }
+    void MoveCharacter()
+    {
+        // Calculate movement speed based on whether the player is running
+        float speed = walkSpeed;
+
+        // Apply horizontal movement
+        rb.linearVelocity = new Vector2(moveDirection * speed, rb.Velocity.y);
     }
 }
