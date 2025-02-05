@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d522e352a8d8e7c4bab90e48960d67e2
+guid: f944328f3b32e88429d61cebcd746184
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -80,7 +80,7 @@ ScriptedImporter:
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
@@ -93,11 +93,11 @@ ScriptedImporter:
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 1
+    generateAnimationClips: 0
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638721659667973818
+  platformSettingsDirtyTick: 638743154340620586
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 4
       width: 320
       height: 180
-    spriteID: e0b35de3b16884c408b162f5fafecefb
+    spriteID: 5672988f64ba248488c9f7de3e34b2e9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -160,7 +160,7 @@ ScriptedImporter:
         y: 0
         width: 320
         height: 180
-      spriteId: e0b35de3b16884c408b162f5fafecefb
+      spriteId: 5672988f64ba248488c9f7de3e34b2e9
     linkedCells: []
     parentIndex: -1
   platformSettings:
