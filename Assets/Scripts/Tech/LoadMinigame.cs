@@ -14,9 +14,16 @@ public class LoadMinigame : MonoBehaviour
     public float yPosition = 0.0f;
     public float speed = 1.0f;
 
+    public bool showFishingIndicator = false;
+    public GameObject fishingIndicator;
+    public float fadeModifier = 1.0f;
+
     void Start()
     {
-
+        if (showFishingIndicator)
+        {
+            fishingIndicator.SetActive(false);
+        }
     }
 
     void Update()
@@ -31,6 +38,10 @@ public class LoadMinigame : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
+            if (showFishingIndicator)
+            {
+                StartCoroutine(ShowIndicator());
+            }
             canLoad = true;
         }
     }
@@ -53,6 +64,10 @@ public class LoadMinigame : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
+            if (showFishingIndicator)
+            {
+                StartCoroutine(HideIndicator());
+            }
             canLoad = false;
         }
     }
@@ -75,5 +90,25 @@ public class LoadMinigame : MonoBehaviour
         {
             yield return null;
         }
+    }
+
+    IEnumerator ShowIndicator()
+    {
+        fishingIndicator.SetActive(true);
+        while (fishingIndicator.GetComponent<SpriteRenderer>().color.a < 1)
+        {
+            fishingIndicator.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, fishingIndicator.GetComponent<SpriteRenderer>().color.a + Time.deltaTime * fadeModifier);
+            yield return null;
+        }
+    }
+
+    IEnumerator HideIndicator()
+    {
+        while (fishingIndicator.GetComponent<SpriteRenderer>().color.a > 0)
+        {
+            fishingIndicator.GetComponent<SpriteRenderer>().color = new Color(1.0f, 1.0f, 1.0f, fishingIndicator.GetComponent<SpriteRenderer>().color.a - Time.deltaTime * fadeModifier);
+            yield return null;
+        }
+        fishingIndicator.SetActive(false);
     }
 }
