@@ -11,16 +11,16 @@ public class MoveClouds : MonoBehaviour
     [Header("Parallax Effect")]
     [Tooltip("strength of the parallax effect")]
     public float parallaxEffect;
-    public Camera cam;
     private float startpos;
     private float distance;
 
+    private CameraFollowPlayer cameraFollowPlayer;
+    private Transform player;
+
     void Start()
     {
-        if (cam == null)
-        {
-            cam = Camera.main;
-        }
+        cameraFollowPlayer = Camera.main.GetComponent<CameraFollowPlayer>();
+        player = GameObject.Find("Player").transform;
 
         if (!moveRight)
         {
@@ -34,15 +34,20 @@ public class MoveClouds : MonoBehaviour
     {
         startpos += speed * Time.deltaTime;
 
-        if (parallaxEffect <= 1)
+        if (cameraFollowPlayer.camFollowPlayer)
         {
-            Vector3 camPos = cam.transform.position;
-            distance = camPos.x * parallaxEffect;
+            if (parallaxEffect <= 1)
+            {
+                distance = player.position.x * parallaxEffect;
+            }
+            else if (parallaxEffect > 1)
+            {
+                distance = player.position.x * -parallaxEffect;
+            }
         }
-        else if (parallaxEffect > 1)
+        else
         {
-            Vector3 camPos = cam.transform.position;
-            distance = camPos.x * -parallaxEffect;
+            distance = 0;
         }
 
         transform.position = new Vector3(startpos + distance, this.transform.position.y, this.transform.position.z);

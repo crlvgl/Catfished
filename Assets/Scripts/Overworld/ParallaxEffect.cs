@@ -3,17 +3,16 @@ using UnityEngine;
 public class ParallaxEffect : MonoBehaviour
 {
     public float parallaxEffect;
-    public Camera cam;
     private float startpos;
     private float distance;
+    private CameraFollowPlayer cameraFollowPlayer;
+    private Transform player;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        if (cam == null)
-        {
-            cam = Camera.main;
-        }
+        cameraFollowPlayer = Camera.main.GetComponent<CameraFollowPlayer>();
+        player = GameObject.Find("Player").transform;
 
         startpos = transform.position.x;
     }
@@ -21,16 +20,17 @@ public class ParallaxEffect : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (parallaxEffect <= 1)
+        if (cameraFollowPlayer.camFollowPlayer)
         {
-            Vector3 camPos = cam.transform.position;
-            distance = camPos.x * parallaxEffect;
-            // Debug.Log(this.gameObject.name);
-        }
-        else if (parallaxEffect > 1)
-        {
-            Vector3 camPos = cam.transform.position;
-            distance = camPos.x * -parallaxEffect;
+            if (parallaxEffect <= 1)
+            {
+                distance = player.position.x * parallaxEffect;
+                // Debug.Log(this.gameObject.name);
+            }
+            else if (parallaxEffect > 1)
+            {
+                distance = player.position.x * -parallaxEffect;
+            }
         }
 
         transform.position = new Vector3(startpos + distance, transform.position.y, transform.position.z);
