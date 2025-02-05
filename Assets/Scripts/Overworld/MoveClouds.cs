@@ -34,7 +34,7 @@ public class MoveClouds : MonoBehaviour
     {
         startpos += speed * Time.deltaTime;
 
-        if (cameraFollowPlayer.camFollowPlayer)
+        if (cameraFollowPlayer != null && cameraFollowPlayer.camFollowPlayer)
         {
             if (parallaxEffect <= 1)
             {
