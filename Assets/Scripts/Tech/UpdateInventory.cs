@@ -18,7 +18,6 @@ public class UpdateInventory : MonoBehaviour
         canalNemoBag,
         canalRadioactiveFish,
         lavaCerberus,
-        lavaFishStick,
         lavaFishboneFire,
         lavaAngyGray,
         seaTurtleLifering,
@@ -37,7 +36,8 @@ public class UpdateInventory : MonoBehaviour
         cloudLakeCloud,
         cloudLakeBaloony,
         cloudLakeShootingStar,
-        catFish
+        catFish,
+        FishStick
     }
     public possibleNames nameOfFish;
     private string fishName;

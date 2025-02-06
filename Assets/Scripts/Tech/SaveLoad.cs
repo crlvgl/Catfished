@@ -27,7 +27,6 @@ public class SaveLoad : MonoBehaviour
         SetBool("canalNemoBag", Inventory.canalNemoBag);
         SetBool("canalRadioactiveFish", Inventory.canalRadioactiveFish);
         SetBool("lavaCerberus", Inventory.lavaCerberus); // lava fish
-        SetBool("lavaFishStick", Inventory.lavaFishStick);
         SetBool("lavaFishboneFire", Inventory.lavaFishboneFire);
         SetBool("lavaAngyGray", Inventory.lavaAngyGray);
         SetBool("seaTurtleLifering", Inventory.seaTurtleLifering); // sea fish
@@ -47,6 +46,7 @@ public class SaveLoad : MonoBehaviour
         SetBool("cloudLakeBaloony", Inventory.cloudLakeBaloony);
         SetBool("cloudLakeShootingStar", Inventory.cloudLakeShootingStar);
         SetBool("catFish", Inventory.catFish); // cat fish
+        SetBool("FishStick", Inventory.FishStick); // fish stick
 
         Debug.Log("Game saved");
     }
@@ -61,7 +61,6 @@ public class SaveLoad : MonoBehaviour
         Inventory.canalNemoBag = GetBool("canalNemoBag");
         Inventory.canalRadioactiveFish = GetBool("canalRadioactiveFish");
         Inventory.lavaCerberus = GetBool("lavaCerberus"); // lava fish
-        Inventory.lavaFishStick = GetBool("lavaFishStick");
         Inventory.lavaFishboneFire = GetBool("lavaFishboneFire");
         Inventory.lavaAngyGray = GetBool("lavaAngyGray");
         Inventory.seaTurtleLifering = GetBool("seaTurtleLifering"); // sea fish
@@ -81,6 +80,7 @@ public class SaveLoad : MonoBehaviour
         Inventory.cloudLakeBaloony = GetBool("cloudLakeBaloony");
         Inventory.cloudLakeShootingStar = GetBool("cloudLakeShootingStar");
         Inventory.catFish = GetBool("catFish"); // cat fish
+        Inventory.FishStick = GetBool("FishStick"); // fish stick
 
         // player position
         staticBackbone.sceneToLoad = PlayerPrefs.GetString("currentScene");
@@ -105,7 +105,6 @@ public class SaveLoad : MonoBehaviour
         canalNemoBag: {Inventory.canalNemoBag}
         canalRadioactiveFish: {Inventory.canalRadioactiveFish}
         lavaCerberus: {Inventory.lavaCerberus}
-        lavaFishStick: {Inventory.lavaFishStick}
         lavaFishboneFire: {Inventory.lavaFishboneFire}
         lavaAngyGray: {Inventory.lavaAngyGray}
         seaTurtleLifering: {Inventory.seaTurtleLifering}
@@ -124,7 +123,8 @@ public class SaveLoad : MonoBehaviour
         cloudLakeCloud: {Inventory.cloudLakeCloud}
         cloudLakeBaloony: {Inventory.cloudLakeBaloony}
         cloudLakeShootingStar: {Inventory.cloudLakeShootingStar}
-        catFish: {Inventory.catFish}");
+        catFish: {Inventory.catFish}
+        FishStick: {Inventory.FishStick}");
     }
 
     public static void SetBool(string key, bool value)

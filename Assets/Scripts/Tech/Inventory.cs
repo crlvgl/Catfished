@@ -15,7 +15,6 @@ public static class Inventory
 
     // lava fish
     public static bool lavaCerberus = false;
-    public static bool lavaFishStick = false;
     public static bool lavaFishboneFire = false;
     public static bool lavaAngyGray = false;
 
@@ -43,8 +42,9 @@ public static class Inventory
     public static bool cloudLakeBaloony = false;
     public static bool cloudLakeShootingStar = false;
 
-    // cat fish
+    // special fish
     public static bool catFish = false;
+    public static bool FishStick = false;
 
     //   .
     //  .;;:,.
