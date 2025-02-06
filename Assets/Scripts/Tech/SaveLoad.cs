@@ -96,6 +96,35 @@ public class SaveLoad : MonoBehaviour
         }
 
         Debug.Log("Game loading...");
+
+        Debug.Log(@$"Loaded Inventory to
+        caveHermitCrab: {Inventory.caveHermitCrab}
+        cavePurpleSquid: {Inventory.cavePurpleSquid}
+        caveCrystalSlug: {Inventory.caveCrystalSlug}
+        canalCrocBaby: {Inventory.canalCrocBaby}
+        canalNemoBag: {Inventory.canalNemoBag}
+        canalRadioactiveFish: {Inventory.canalRadioactiveFish}
+        lavaCerberus: {Inventory.lavaCerberus}
+        lavaFishStick: {Inventory.lavaFishStick}
+        lavaFishboneFire: {Inventory.lavaFishboneFire}
+        lavaAngyGray: {Inventory.lavaAngyGray}
+        seaTurtleLifering: {Inventory.seaTurtleLifering}
+        seaWaterBall: {Inventory.seaWaterBall}
+        seaAlgaeEel: {Inventory.seaAlgaeEel}
+        seaSub: {Inventory.seaSub}
+        seaKoinobori: {Inventory.seaKoinobori}
+        retroPcFish: {Inventory.retroPcFish}
+        retroGameBoy: {Inventory.retroGameBoy}
+        retroTetris: {Inventory.retroTetris}
+        retroTamagotchi: {Inventory.retroTamagotchi}
+        magicForrestWoodBlank: {Inventory.magicForrestWoodBlank}
+        magicForrestBullfrog: {Inventory.magicForrestBullfrog}
+        magicForrestBlobfish: {Inventory.magicForrestBlobfish}
+        cloudLakeMola: {Inventory.cloudLakeMola}
+        cloudLakeCloud: {Inventory.cloudLakeCloud}
+        cloudLakeBaloony: {Inventory.cloudLakeBaloony}
+        cloudLakeShootingStar: {Inventory.cloudLakeShootingStar}
+        catFish: {Inventory.catFish}");
     }
 
     public static void SetBool(string key, bool value)
