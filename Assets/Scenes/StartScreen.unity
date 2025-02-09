@@ -2747,6 +2747,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2044203287746507636, guid: c17de6bb1f4834243bcfee30842dcc7c, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 4854485603285965981, guid: c17de6bb1f4834243bcfee30842dcc7c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -38
@@ -4369,7 +4373,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -3
   m_Sprite: {fileID: 8493276261960693377, guid: 73b6ffea6949f2a4c8ca4f719699366d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4983,6 +4987,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2044203287746507636, guid: c17de6bb1f4834243bcfee30842dcc7c, type: 3}
+      propertyPath: m_SortingOrder
+      value: -2
+      objectReference: {fileID: 0}
     - target: {fileID: 4854485603285965981, guid: c17de6bb1f4834243bcfee30842dcc7c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5
