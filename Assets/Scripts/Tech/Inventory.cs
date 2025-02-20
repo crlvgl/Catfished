@@ -11,18 +11,17 @@ public static class Inventory
     // canal fish
     public static bool canalCrocBaby = false;
     public static bool canalNemoBag = false;
-    public static bool canalRadioactiveFish = false;
+    public static bool canalTeethFish = false;
 
     // lava fish
     public static bool lavaCerberus = false;
     public static bool lavaFishboneFire = false;
-    public static bool lavaAngyGray = false;
+    public static bool lavaBlackHole = false;
 
     // sea fish
     public static bool seaTurtleLifering = false;
     public static bool seaWaterBall = false;
     public static bool seaAlgaeEel = false;
-    public static bool seaSub = false;
     public static bool seaKoinobori = false;
 
     // retro fish
@@ -45,6 +44,9 @@ public static class Inventory
     // special fish
     public static bool catFish = false;
     public static bool FishStick = false;
+    public static bool Chtulhu = false;
+    public static bool rubberDuckie = false;
+
 
     //   .
     //  .;;:,.

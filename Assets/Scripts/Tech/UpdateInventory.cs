@@ -16,14 +16,13 @@ public class UpdateInventory : MonoBehaviour
         caveCrystalSlug,
         canalCrocBaby,
         canalNemoBag,
-        canalRadioactiveFish,
+        canalTeethFish,
         lavaCerberus,
         lavaFishboneFire,
-        lavaAngyGray,
+        lavaBlackHole,
         seaTurtleLifering,
         seaWaterBall,
         seaAlgaeEel,
-        seaSub,
         seaKoinobori,
         retroPcFish,
         retroGameBoy,
@@ -37,7 +36,9 @@ public class UpdateInventory : MonoBehaviour
         cloudLakeBaloony,
         cloudLakeShootingStar,
         catFish,
-        FishStick
+        FishStick,
+        Chtulhu,
+        rubberDuckie
     }
     public possibleNames nameOfFish;
     private string fishName;

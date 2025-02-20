@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 529e9d16bcc76ec44a00d1888fa38a65
+guid: 7272792a4ce7afb48b8ed4662362e18a
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -80,7 +80,7 @@ ScriptedImporter:
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 0
+    generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   asepriteImporterSettings:
@@ -93,11 +93,11 @@ ScriptedImporter:
     mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
-    generateAnimationClips: 0
+    generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638722976841825582
+  platformSettingsDirtyTick: 638756229176036856
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -134,7 +134,7 @@ ScriptedImporter:
       y: 4
       width: 461
       height: 180
-    spriteID: b8df602f8c41d684b801cad791d61beb
+    spriteID: e13edb5480aa94f4797a92b8a916ff46
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -155,7 +155,7 @@ ScriptedImporter:
       y: 4
       width: 461
       height: 180
-    spriteID: d6bef6724e3fe9f4fb32b1ee6c15dc7a
+    spriteID: 468f51b45ad876c4991d55f3cdc80455
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -176,7 +176,7 @@ ScriptedImporter:
       y: 192
       width: 461
       height: 180
-    spriteID: ba14d2e9179378e49b10e3e9fbaa75a3
+    spriteID: dd5dc953f37772a4c88f43265bf69649
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -197,7 +197,7 @@ ScriptedImporter:
       y: 192
       width: 461
       height: 180
-    spriteID: 5a349100e12814e478e1d4a9063ff37d
+    spriteID: 62c4ce37a3991bc46b694fa2dc3b9905
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -206,7 +206,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 473, y: 192}
-  - name: Layer 5-Copy
+  - name: Layer 5-Copy - Merged
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -218,7 +218,7 @@ ScriptedImporter:
       y: 380
       width: 461
       height: 180
-    spriteID: 778e1f2b133cd424ea165ecfe047c22e
+    spriteID: defff7656396edc4dbe245fc91d615ef
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -227,51 +227,9 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 380}
-  - name: Layer 4
+  - name: Layer 4 - Merged_Frame_0
     originalName: 
-    pivot: {x: 0.9604167, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 754
-      y: 568
-      width: 240
-      height: 96
-    spriteID: dd8253749a8a3184ca96ecd499e28d88
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 754, y: 568}
-  - name: Layer 9
-    originalName: 
-    pivot: {x: 0.614011, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    customData: 
-    rect:
-      serializedVersion: 2
-      x: 382
-      y: 568
-      width: 364
-      height: 118
-    spriteID: 1a773e69e27d8054f966b9ac935b56ea
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 375, y: 568}
-  - name: Layer 10
-    originalName: 
-    pivot: {x: 0.6148648, y: -0.02898551}
+    pivot: {x: 0.98085105, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -279,9 +237,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 568
-      width: 370
-      height: 138
-    spriteID: 7c9a4c5f99292844a8b912ee9e5992c2
+      width: 235
+      height: 92
+    spriteID: cffea086bb54a5a4fa38d32e90ccc58c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -289,8 +247,50 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 1, y: 564}
-  - name: Layer 1
+    uvTransform: {x: 4, y: 568}
+  - name: Layer 4 - Merged_Frame_1
+    originalName: 
+    pivot: {x: 0.98085105, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 247
+      y: 568
+      width: 235
+      height: 92
+    spriteID: c98f7ce2b20918246ab7a0975ac3a63f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 247, y: 568}
+  - name: Layer 4 - Merged_Frame_2
+    originalName: 
+    pivot: {x: 0.98085105, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    customData: 
+    rect:
+      serializedVersion: 2
+      x: 490
+      y: 568
+      width: 235
+      height: 92
+    spriteID: 2334f9d773b6e584c92a6d9da6bd96fd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 490, y: 568}
+  - name: Layer 13 - Merged - Merged
     originalName: 
     pivot: {x: 0.49891305, y: 0}
     alignment: 9
@@ -302,7 +302,7 @@ ScriptedImporter:
       y: 380
       width: 460
       height: 180
-    spriteID: 1dafd941a0ebd7f45b033a5119dd62eb
+    spriteID: f248391123ae78243a2abb6b071f6f67
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -328,8 +328,12 @@ ScriptedImporter:
         y: 0
         width: 461
         height: 180
-      spriteId: b8df602f8c41d684b801cad791d61beb
-    linkedCells: []
+      spriteId: e13edb5480aa94f4797a92b8a916ff46
+    linkedCells:
+    - frameIndex: 1
+      linkedToFrame: 0
+    - frameIndex: 2
+      linkedToFrame: 0
     parentIndex: -1
   - layerIndex: 1
     guid: 1317223539
@@ -346,8 +350,12 @@ ScriptedImporter:
         y: 0
         width: 461
         height: 180
-      spriteId: d6bef6724e3fe9f4fb32b1ee6c15dc7a
-    linkedCells: []
+      spriteId: 468f51b45ad876c4991d55f3cdc80455
+    linkedCells:
+    - frameIndex: 1
+      linkedToFrame: 0
+    - frameIndex: 2
+      linkedToFrame: 0
     parentIndex: -1
   - layerIndex: 2
     guid: 1317223143
@@ -364,8 +372,12 @@ ScriptedImporter:
         y: 0
         width: 461
         height: 180
-      spriteId: ba14d2e9179378e49b10e3e9fbaa75a3
-    linkedCells: []
+      spriteId: dd5dc953f37772a4c88f43265bf69649
+    linkedCells:
+    - frameIndex: 1
+      linkedToFrame: 0
+    - frameIndex: 2
+      linkedToFrame: 0
     parentIndex: -1
   - layerIndex: 3
     guid: 1317224335
@@ -382,17 +394,21 @@ ScriptedImporter:
         y: 0
         width: 461
         height: 180
-      spriteId: 5a349100e12814e478e1d4a9063ff37d
-    linkedCells: []
+      spriteId: 62c4ce37a3991bc46b694fa2dc3b9905
+    linkedCells:
+    - frameIndex: 1
+      linkedToFrame: 0
+    - frameIndex: 2
+      linkedToFrame: 0
     parentIndex: -1
   - layerIndex: 4
-    guid: -734302550
-    name: Layer 5-Copy
+    guid: -2117492829
+    name: Layer 5-Copy - Merged
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 5-Copy
+    - name: Layer 5-Copy - Merged
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -400,17 +416,21 @@ ScriptedImporter:
         y: 0
         width: 461
         height: 180
-      spriteId: 778e1f2b133cd424ea165ecfe047c22e
-    linkedCells: []
+      spriteId: defff7656396edc4dbe245fc91d615ef
+    linkedCells:
+    - frameIndex: 1
+      linkedToFrame: 0
+    - frameIndex: 2
+      linkedToFrame: 0
     parentIndex: -1
   - layerIndex: 5
-    guid: 1317223930
-    name: Layer 4
+    guid: 58246481
+    name: Layer 4 - Merged
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 4
+    - name: Layer 4 - Merged_Frame_0
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -418,17 +438,35 @@ ScriptedImporter:
         y: 0
         width: 461
         height: 180
-      spriteId: dd8253749a8a3184ca96ecd499e28d88
+      spriteId: cffea086bb54a5a4fa38d32e90ccc58c
+    - name: Layer 4 - Merged_Frame_1
+      frameIndex: 1
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 461
+        height: 180
+      spriteId: c98f7ce2b20918246ab7a0975ac3a63f
+    - name: Layer 4 - Merged_Frame_2
+      frameIndex: 2
+      additiveSortOrder: 0
+      cellRect:
+        x: 0
+        y: 0
+        width: 461
+        height: 180
+      spriteId: 2334f9d773b6e584c92a6d9da6bd96fd
     linkedCells: []
     parentIndex: -1
   - layerIndex: 6
-    guid: 1317225926
-    name: Layer 9
+    guid: -477828741
+    name: Layer 13 - Merged - Merged
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 9
+    - name: Layer 13 - Merged - Merged
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -436,44 +474,12 @@ ScriptedImporter:
         y: 0
         width: 461
         height: 180
-      spriteId: 1a773e69e27d8054f966b9ac935b56ea
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 7
-    guid: 1999284143
-    name: Layer 10
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Layer 10
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 461
-        height: 180
-      spriteId: 7c9a4c5f99292844a8b912ee9e5992c2
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 8
-    guid: 1317222736
-    name: Layer 1
-    layerFlags: 3
-    layerType: 0
-    blendMode: 0
-    cells:
-    - name: Layer 1
-      frameIndex: 0
-      additiveSortOrder: 0
-      cellRect:
-        x: 0
-        y: 0
-        width: 461
-        height: 180
-      spriteId: 1dafd941a0ebd7f45b033a5119dd62eb
-    linkedCells: []
+      spriteId: f248391123ae78243a2abb6b071f6f67
+    linkedCells:
+    - frameIndex: 1
+      linkedToFrame: 0
+    - frameIndex: 2
+      linkedToFrame: 0
     parentIndex: -1
   platformSettings:
   - name: Default

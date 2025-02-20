@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f525f1f1325ccce4a8cf987f1d9ada3d
+guid: 56b0d1d523f627e4e9115318d1cd2a91
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638743203913880271
+  platformSettingsDirtyTick: 638756196336620873
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Layer 1
+  - name: Gelb
     originalName: 
-    pivot: {x: 1.6551722, y: -2.3055556}
+    pivot: {x: 1.5806451, y: -2.1578948}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 29
-      height: 36
-    spriteID: cbc5ce5ead12aac44a16b9cdd36a1cc4
+      width: 31
+      height: 38
+    spriteID: 1177e59b49404da459d6e98bf4694b8e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +142,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -13, y: -79}
-  - name: Layer 2
+    uvTransform: {x: -12, y: -78}
+  - name: Lila
     originalName: 
-    pivot: {x: -0.5517241, y: -2.3055556}
+    pivot: {x: -0.51612896, y: -2.1578948}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 48
-      width: 29
-      height: 36
-    spriteID: d0fe261e96cfcff4f9cdf766f9c60e05
+      y: 50
+      width: 31
+      height: 38
+    spriteID: 436743cbf0d48e94b8c1d318b9545223
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,20 +163,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -77, y: -35}
-  - name: Layer 3
+    uvTransform: {x: -77, y: -32}
+  - name: Rot
     originalName: 
-    pivot: {x: 1.6206896, y: -0.5277778}
+    pivot: {x: 1.5483869, y: -0.47368422}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 41
+      x: 43
       y: 4
-      width: 29
-      height: 36
-    spriteID: 2e165f60daf3f564db6f006f96b69119
+      width: 31
+      height: 38
+    spriteID: 3458c52d6a42db34aad9496380120171
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -184,20 +184,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 23, y: -15}
-  - name: Layer 4
+    uvTransform: {x: 26, y: -14}
+  - name: "Gr\xC3\xBCn"
     originalName: 
-    pivot: {x: -0.5517241, y: -0.5277778}
+    pivot: {x: -0.48387104, y: -0.47368422}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 41
-      y: 48
-      width: 29
-      height: 36
-    spriteID: e4a60548090f4a74ea64145e30935a99
+      x: 43
+      y: 50
+      width: 31
+      height: 38
+    spriteID: db72bc8d9916edc4aafdda64e466ffaf
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -205,17 +205,17 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -40, y: 29}
+    uvTransform: {x: -37, y: 32}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 1317222744
-    name: Layer 1
+    guid: -822187048
+    name: Gelb
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 1
+    - name: Gelb
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -223,17 +223,17 @@ ScriptedImporter:
         y: 0
         width: 130
         height: 134
-      spriteId: cbc5ce5ead12aac44a16b9cdd36a1cc4
+      spriteId: 1177e59b49404da459d6e98bf4694b8e
     linkedCells: []
     parentIndex: -1
   - layerIndex: 1
-    guid: 1317221552
-    name: Layer 2
+    guid: -1598853649
+    name: Lila
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 2
+    - name: Lila
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -241,17 +241,17 @@ ScriptedImporter:
         y: 0
         width: 130
         height: 134
-      spriteId: d0fe261e96cfcff4f9cdf766f9c60e05
+      spriteId: 436743cbf0d48e94b8c1d318b9545223
     linkedCells: []
     parentIndex: -1
   - layerIndex: 2
-    guid: 1317221948
-    name: Layer 3
+    guid: -468245805
+    name: Rot
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 3
+    - name: Rot
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -259,17 +259,17 @@ ScriptedImporter:
         y: 0
         width: 130
         height: 134
-      spriteId: 2e165f60daf3f564db6f006f96b69119
+      spriteId: 3458c52d6a42db34aad9496380120171
     linkedCells: []
     parentIndex: -1
   - layerIndex: 3
-    guid: 1317223932
-    name: Layer 4
+    guid: 2032008973
+    name: "Gr\xC3\xBCn"
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 4
+    - name: "Gr\xC3\xBCn"
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -277,7 +277,7 @@ ScriptedImporter:
         y: 0
         width: 130
         height: 134
-      spriteId: e4a60548090f4a74ea64145e30935a99
+      spriteId: db72bc8d9916edc4aafdda64e466ffaf
     linkedCells: []
     parentIndex: -1
   platformSettings:

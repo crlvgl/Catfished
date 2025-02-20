@@ -25,14 +25,13 @@ public class SaveLoad : MonoBehaviour
         SetBool("caveCrystalSlug", Inventory.caveCrystalSlug);
         SetBool("canalCrocBaby", Inventory.canalCrocBaby); // canal fish
         SetBool("canalNemoBag", Inventory.canalNemoBag);
-        SetBool("canalRadioactiveFish", Inventory.canalRadioactiveFish);
+        SetBool("canalTeethFish", Inventory.canalTeethFish);
         SetBool("lavaCerberus", Inventory.lavaCerberus); // lava fish
         SetBool("lavaFishboneFire", Inventory.lavaFishboneFire);
-        SetBool("lavaAngyGray", Inventory.lavaAngyGray);
+        SetBool("lavaBlackHole", Inventory.lavaBlackHole);
         SetBool("seaTurtleLifering", Inventory.seaTurtleLifering); // sea fish
         SetBool("seaWaterBall", Inventory.seaWaterBall);
         SetBool("seaAlgaeEel", Inventory.seaAlgaeEel);
-        SetBool("seaSub", Inventory.seaSub);
         SetBool("seaKoinobori", Inventory.seaKoinobori);
         SetBool("retroPcFish", Inventory.retroPcFish); // retro fish
         SetBool("retroGameBoy", Inventory.retroGameBoy);
@@ -47,6 +46,8 @@ public class SaveLoad : MonoBehaviour
         SetBool("cloudLakeShootingStar", Inventory.cloudLakeShootingStar);
         SetBool("catFish", Inventory.catFish); // cat fish
         SetBool("FishStick", Inventory.FishStick); // fish stick
+        SetBool("Chtulhu", Inventory.Chtulhu); // chtulhu
+        SetBool("rubberDuckie", Inventory.rubberDuckie); // rubber duckie
 
         Debug.Log("Game saved");
     }
@@ -59,14 +60,13 @@ public class SaveLoad : MonoBehaviour
         Inventory.caveCrystalSlug = GetBool("caveCrystalSlug");
         Inventory.canalCrocBaby = GetBool("canalCrocBaby"); // canal fish
         Inventory.canalNemoBag = GetBool("canalNemoBag");
-        Inventory.canalRadioactiveFish = GetBool("canalRadioactiveFish");
+        Inventory.canalTeethFish = GetBool("canalTeethFish");
         Inventory.lavaCerberus = GetBool("lavaCerberus"); // lava fish
         Inventory.lavaFishboneFire = GetBool("lavaFishboneFire");
-        Inventory.lavaAngyGray = GetBool("lavaAngyGray");
+        Inventory.lavaBlackHole = GetBool("lavaBlackHole");
         Inventory.seaTurtleLifering = GetBool("seaTurtleLifering"); // sea fish
         Inventory.seaWaterBall = GetBool("seaWaterBall");
         Inventory.seaAlgaeEel = GetBool("seaAlgaeEel");
-        Inventory.seaSub = GetBool("seaSub");
         Inventory.seaKoinobori = GetBool("seaKoinobori");
         Inventory.retroPcFish = GetBool("retroPcFish"); // retro fish
         Inventory.retroGameBoy = GetBool("retroGameBoy");
@@ -81,6 +81,8 @@ public class SaveLoad : MonoBehaviour
         Inventory.cloudLakeShootingStar = GetBool("cloudLakeShootingStar");
         Inventory.catFish = GetBool("catFish"); // cat fish
         Inventory.FishStick = GetBool("FishStick"); // fish stick
+        Inventory.Chtulhu = GetBool("Chtulhu"); // chtulhu
+        Inventory.rubberDuckie = GetBool("rubberDuckie"); // rubber duckie
 
         // player position
         staticBackbone.sceneToLoad = PlayerPrefs.GetString("currentScene");
@@ -103,14 +105,13 @@ public class SaveLoad : MonoBehaviour
         caveCrystalSlug: {Inventory.caveCrystalSlug}
         canalCrocBaby: {Inventory.canalCrocBaby}
         canalNemoBag: {Inventory.canalNemoBag}
-        canalRadioactiveFish: {Inventory.canalRadioactiveFish}
+        canalTeethFish: {Inventory.canalTeethFish}
         lavaCerberus: {Inventory.lavaCerberus}
         lavaFishboneFire: {Inventory.lavaFishboneFire}
-        lavaAngyGray: {Inventory.lavaAngyGray}
+        lavaBlackHole: {Inventory.lavaBlackHole}
         seaTurtleLifering: {Inventory.seaTurtleLifering}
         seaWaterBall: {Inventory.seaWaterBall}
         seaAlgaeEel: {Inventory.seaAlgaeEel}
-        seaSub: {Inventory.seaSub}
         seaKoinobori: {Inventory.seaKoinobori}
         retroPcFish: {Inventory.retroPcFish}
         retroGameBoy: {Inventory.retroGameBoy}
@@ -124,7 +125,9 @@ public class SaveLoad : MonoBehaviour
         cloudLakeBaloony: {Inventory.cloudLakeBaloony}
         cloudLakeShootingStar: {Inventory.cloudLakeShootingStar}
         catFish: {Inventory.catFish}
-        FishStick: {Inventory.FishStick}");
+        FishStick: {Inventory.FishStick}
+        Chtulhu: {Inventory.Chtulhu}
+        rubberDuckie: {Inventory.rubberDuckie}");
     }
 
     public static void SetBool(string key, bool value)

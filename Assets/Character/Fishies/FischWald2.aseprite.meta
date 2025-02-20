@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5074cc49fbcd2f847b2080a0f26cff0e
+guid: dd3309de34f689440ab8aad030ab9fea
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -75,7 +75,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -88,7 +88,7 @@ ScriptedImporter:
     importHiddenLayers: 0
     layerImportMode: 0
     defaultPivotSpace: 0
-    defaultPivotAlignment: 0
+    defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
     mosaicPadding: 4
     spritePadding: 0
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638725862688385551
+  platformSettingsDirtyTick: 638756203697044750
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -122,19 +122,19 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Reference Layer 1-Copy - Merged
+  - name: Reference Layer 1-Copy - Merged - Merged
     originalName: 
-    pivot: {x: 0.5, y: 0.44444445}
+    pivot: {x: 0.5, y: -0.06896552}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
       x: 4
-      y: 38
-      width: 32
-      height: 27
-    spriteID: 587b3bb2ab58ada4a80a472e69731e2d
+      y: 43
+      width: 34
+      height: 29
+    spriteID: dc0b093052f94fa4cb1c380f73d1a116
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,10 +142,10 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 3, y: 34}
+    uvTransform: {x: 3, y: 41}
   - name: Layer 1
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: -0.032258064}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -153,9 +153,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 34
-      height: 26
-    spriteID: 564015f31e711b94fb84a2c0c73f75be
+      width: 36
+      height: 31
+    spriteID: 2f30b4fbb457c7747873a969065480b4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,38 +163,29 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 1}
+    uvTransform: {x: 4, y: 3}
   spriteSheetImportData: []
   asepriteLayers:
-  - layerIndex: 3
-    guid: -1272845827
-    name: Group 1
-    layerFlags: 3
-    layerType: 1
-    blendMode: 0
-    cells: []
-    linkedCells: []
-    parentIndex: -1
-  - layerIndex: 4
-    guid: -1497107618
-    name: Reference Layer 1-Copy - Merged
+  - layerIndex: 0
+    guid: 1821510361
+    name: Reference Layer 1-Copy - Merged - Merged
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Reference Layer 1-Copy - Merged
+    - name: Reference Layer 1-Copy - Merged - Merged
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 0
         y: 0
-        width: 34
+        width: 36
         height: 32
-      spriteId: 587b3bb2ab58ada4a80a472e69731e2d
+      spriteId: dc0b093052f94fa4cb1c380f73d1a116
     linkedCells: []
-    parentIndex: 3
-  - layerIndex: 5
-    guid: 1317222749
+    parentIndex: -1
+  - layerIndex: 1
+    guid: 1317222745
     name: Layer 1
     layerFlags: 3
     layerType: 0
@@ -206,11 +197,11 @@ ScriptedImporter:
       cellRect:
         x: 0
         y: 0
-        width: 34
+        width: 36
         height: 32
-      spriteId: 564015f31e711b94fb84a2c0c73f75be
+      spriteId: 2f30b4fbb457c7747873a969065480b4
     linkedCells: []
-    parentIndex: 3
+    parentIndex: -1
   platformSettings:
   - name: Default
     overridden: 0
@@ -251,4 +242,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 34, y: 32}
+  canvasSize: {x: 36, y: 32}

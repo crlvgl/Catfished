@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64dd849670b127043939cc385729beb7
+guid: e11cfd02052084645851739608389922
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638743205100081050
+  platformSettingsDirtyTick: 638756250715058324
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Layer 1
     originalName: 
-    pivot: {x: -1.1363636, y: -2.75}
+    pivot: {x: -1.0882353, y: -2.6734693}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 66
-      height: 48
-    spriteID: 39f4af4012bc0bc458798ef8d8ea79bc
+      width: 68
+      height: 49
+    spriteID: fd6d1c8f9b2fbac4a82eeb5e58a75d5a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,7 +142,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -231, y: -128}
+    uvTransform: {x: -230, y: -127}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -160,7 +160,7 @@ ScriptedImporter:
         y: 0
         width: 320
         height: 180
-      spriteId: 39f4af4012bc0bc458798ef8d8ea79bc
+      spriteId: fd6d1c8f9b2fbac4a82eeb5e58a75d5a
     linkedCells: []
     parentIndex: -1
   platformSettings:

@@ -105,4 +105,3 @@ MonoBehaviour:
   moveRight: 1
   destroyPoint: 48
   parallaxEffect: 0.9
-  cam: {fileID: 0}

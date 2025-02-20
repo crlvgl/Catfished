@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d1cb6cc925c578f4b8866eff9b5edde6
+guid: ef4f0c8badb7eaa48930c70da2d2b577
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638743204309405069
+  platformSettingsDirtyTick: 638756251333201090
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Layer 1
     originalName: 
-    pivot: {x: 0.65217394, y: -0.3611111}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -132,9 +132,9 @@ ScriptedImporter:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 23
-      height: 36
-    spriteID: cd5684b4a83cfba44924b683dea0a516
+      width: 64
+      height: 64
+    spriteID: 1d295ed330937094cab9505b15f2d9fd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -142,20 +142,20 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: -13, y: -9}
-  - name: Layer 2
+    uvTransform: {x: 4, y: 4}
+  - name: Layer 1 - Merged
     originalName: 
-    pivot: {x: 0.6666667, y: -0.37142858}
+    pivot: {x: 0.6296296, y: -0.24390243}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
     rect:
       serializedVersion: 2
-      x: 35
+      x: 76
       y: 4
-      width: 21
-      height: 35
-    spriteID: b1c56a163d4df3345977efb7d5be3971
+      width: 27
+      height: 41
+    spriteID: 002cb52d0a4a1394cb227f569b1fa0f9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -163,7 +163,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 17, y: -9}
+    uvTransform: {x: 61, y: -6}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -181,17 +181,17 @@ ScriptedImporter:
         y: 0
         width: 64
         height: 64
-      spriteId: cd5684b4a83cfba44924b683dea0a516
+      spriteId: 1d295ed330937094cab9505b15f2d9fd
     linkedCells: []
     parentIndex: -1
   - layerIndex: 1
-    guid: 1317221552
-    name: Layer 2
+    guid: -301961542
+    name: Layer 1 - Merged
     layerFlags: 3
     layerType: 0
     blendMode: 0
     cells:
-    - name: Layer 2
+    - name: Layer 1 - Merged
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
@@ -199,7 +199,7 @@ ScriptedImporter:
         y: 0
         width: 64
         height: 64
-      spriteId: b1c56a163d4df3345977efb7d5be3971
+      spriteId: 002cb52d0a4a1394cb227f569b1fa0f9
     linkedCells: []
     parentIndex: -1
   platformSettings:

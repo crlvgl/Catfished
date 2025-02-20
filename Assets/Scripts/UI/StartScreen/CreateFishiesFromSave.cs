@@ -64,13 +64,13 @@ public class CreateFishiesFromSave : MonoBehaviour
 
         string[] allFishNames = {
             "caveHermitCrab", "cavePurpleSquid", "caveCrystalSlug",
-            "canalCrocBaby", "canalNemoBag", "canalRadioactiveFish",
-            "lavaCerberus", "lavaFishboneFire", "lavaAngyGray",
-            "seaTurtleLifering", "seaWaterBall", "seaAlgaeEel", "seaSub", "seaKoinobori",
+            "canalCrocBaby", "canalNemoBag", "canalTeethFish",
+            "lavaCerberus", "lavaFishboneFire", "lavaBlackHole",
+            "seaTurtleLifering", "seaWaterBall", "seaAlgaeEel", "seaKoinobori",
             "retroPcFish", "retroGameBoy", "retroTetris", "retroTamagotchi",
             "magicForrestWoodBlank", "magicForrestBullfrog", "magicForrestBlobfish",
             "cloudLakeMola", "cloudLakeCloud", "cloudLakeBaloony", "cloudLakeShootingStar",
-            "catFish", "FishStick"
+            "catFish", "FishStick", "Chtulhu", "rubberDuckie"
         };
 
         foreach (string fish in allFishNames)

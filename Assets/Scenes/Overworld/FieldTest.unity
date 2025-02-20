@@ -150,7 +150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 1.2
-  cam: {fileID: 0}
 --- !u!212 &119178327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -354,7 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 0.98
-  cam: {fileID: 0}
 --- !u!212 &135874617
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -456,7 +454,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 1.2
-  cam: {fileID: 0}
 --- !u!212 &181096144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -660,7 +657,7 @@ MonoBehaviour:
   fadeSpeed: 1
   player: {fileID: 0}
   moveCharacterAfterLoad: 1
-  playerPositionAfterLoad: 0
+  playerPositionAfterLoad: -2
 --- !u!61 &312686775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1813,7 +1810,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 1.2
-  cam: {fileID: 0}
 --- !u!212 &596661929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2051,7 +2047,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 0.65
-  cam: {fileID: 0}
 --- !u!212 &689772255
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3015,7 +3010,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 0.9
-  cam: {fileID: 0}
 --- !u!1 &1007388823
 GameObject:
   m_ObjectHideFlags: 0
@@ -3299,7 +3293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 0.1
-  cam: {fileID: 0}
 --- !u!212 &1152409410
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4326,7 +4319,6 @@ MonoBehaviour:
   moveRight: 1
   destroyPoint: 48
   parallaxEffect: 0.8
-  cam: {fileID: 90056231620664706}
 --- !u!212 &1325423250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6454,7 +6446,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffect: 0.8
-  cam: {fileID: 0}
 --- !u!1001 &2116195452
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6561,7 +6552,6 @@ MonoBehaviour:
   moveRight: 1
   destroyPoint: 48
   parallaxEffect: 0.9
-  cam: {fileID: 90056231620664706}
 --- !u!1 &2126753857
 GameObject:
   m_ObjectHideFlags: 0
@@ -7095,6 +7085,7 @@ MonoBehaviour:
   deadZoneLeft: -8.81
   deadZoneRight: 8.81
   followPlayer: 1
+  camFollowPlayer: 0
 --- !u!1001 &8614779987686459153
 PrefabInstance:
   m_ObjectHideFlags: 0
