@@ -43,6 +43,7 @@ public class UIButtons : MonoBehaviour
 
     private SpriteRenderer spriteRenderer;
     private Sprite defaultSprite;
+    public bool useEffects = true;
 
     void Start()
     {
@@ -52,15 +53,20 @@ public class UIButtons : MonoBehaviour
     }
 
     void OnMouseEnter()
-    {   
-        sourceForHover.PlayOneShot(clipForHover);
-        spriteRenderer.sprite = mouseOver;
-
+    {
+        if (useEffects)
+        {
+            sourceForHover.PlayOneShot(clipForHover);
+            spriteRenderer.sprite = mouseOver;
+        }
     }
 
     void OnMouseDown()
     {   
-        sourceForClick.PlayOneShot(clipForClick);
+        if (useEffects)
+        {
+            sourceForClick.PlayOneShot(clipForClick);
+        }
         switch (functionOfButton)
         {
             case "load":
@@ -97,7 +103,10 @@ public class UIButtons : MonoBehaviour
 
     void OnMouseExit()
     {
-        spriteRenderer.sprite = defaultSprite;
+        if (useEffects)
+        {
+            spriteRenderer.sprite = defaultSprite;
+        }
     }
 
     IEnumerator LoadScene(string SceneToLoad)

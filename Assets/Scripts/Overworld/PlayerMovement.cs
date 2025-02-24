@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 5.0f;
     public GameObject pauseMenu;
     public KeyCode pauseKey = KeyCode.Escape;
+    public GameObject phone;
 
     private bool ladderExists;
     private Ladder ladder;
@@ -100,6 +101,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (!pauseMenu.activeSelf)
         {
+            // if (!phone.activeSelf)
+            // {
+            //     phone.SetActive(true);
+            // }
             if (ladderExists)
             {
                 if (ladder.isOnLadder == false)
@@ -116,6 +121,13 @@ public class PlayerMovement : MonoBehaviour
                 body.linearVelocity = new Vector2(horizontal * speed, body.linearVelocity.y);
             }
         }
+        // else if (pauseMenu.activeSelf)
+        // {
+        //     if (phone.activeSelf)
+        //     {
+        //         phone.SetActive(false);
+        //     }
+        // }
         if (open)
         {
             pauseMenu.SetActive(!pauseMenu.activeSelf);
