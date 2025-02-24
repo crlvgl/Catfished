@@ -38,6 +38,7 @@ public class LoadMinigame : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
+            Debug.Log("Entered Minigame Area");
             if (showFishingIndicator)
             {
                 StartCoroutine(ShowIndicator());
@@ -64,6 +65,7 @@ public class LoadMinigame : MonoBehaviour
     {
         if (other.gameObject.name == "Player")
         {
+            Debug.Log("Left Minigame Area");
             if (showFishingIndicator)
             {
                 StartCoroutine(HideIndicator());

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine.Rendering;
 
@@ -7,7 +8,7 @@ public class UpdateInventory : MonoBehaviour
 {
     public float waitBeforeAnimation = 0.5f;
     public GameObject circleAnim;
-    public GameObject fishPrefab;
+    public GameObject[] fishPrefab;
 
     public enum possibleNames
     {
@@ -40,19 +41,33 @@ public class UpdateInventory : MonoBehaviour
         Chtulhu,
         rubberDuckie
     }
-    public possibleNames nameOfFish;
-    private string fishName;
+    public possibleNames[] nameOfFish;
+    private List<string> fishName = new List<string>();
+    public float positionAfterLoad = 0f;
 
     void Start()
     {
-        fishName = nameOfFish.ToString();
-        if (staticBackbone.playedMiniGame && staticBackbone.gotFish)
+        foreach (possibleNames name in nameOfFish)
         {
-            StartCoroutine(GotFish());
+            Debug.Log(name);
+            // Debug.Log(name.ToString());
+            // Debug.Log(fishName);
+            fishName.Add(name.ToString());
+            // Debug.Log(fishName);
         }
-        else if (staticBackbone.playedMiniGame && !staticBackbone.gotFish)
+        if (staticBackbone.playedMiniGame)
         {
-            StartCoroutine(NoFish());
+            Transform player = GameObject.Find("Player").transform;
+            player.position = new Vector3(positionAfterLoad, player.position.y, player.position.z);
+            
+            if (staticBackbone.gotFish)
+            {
+                StartCoroutine(GotFish());
+            }
+            else if (!staticBackbone.gotFish)
+            {
+                StartCoroutine(NoFish());
+            }
         }
 
         staticBackbone.playedMiniGame = false;
@@ -61,16 +76,38 @@ public class UpdateInventory : MonoBehaviour
 
     IEnumerator GotFish()
     {
+        string useThisFish = fishName[Random.Range(0, fishName.Count)];
+        GameObject useThisPrefab = null;
+        int safetyCounter = 0;
+        foreach (GameObject possiblePrefab in fishPrefab)
+        {
+            Debug.Log(possiblePrefab.name);
+            if (possiblePrefab.name == useThisFish)
+            {
+                useThisPrefab = possiblePrefab;
+                break;
+            }
+            else if (safetyCounter < fishPrefab.Length)
+            {
+                safetyCounter++;
+            }
+            else
+            {
+                Debug.LogWarning("No matching fish found for " + useThisFish);
+                yield break;
+            }
+        }
         GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(waitBeforeAnimation);
         circleAnim.SetActive(true);
-        GameObject fish = Instantiate(fishPrefab, circleAnim.transform.position, Quaternion.identity);
+        GameObject fish = Instantiate(useThisPrefab, circleAnim.transform.position, Quaternion.identity);
         fish.SetActive(true);
+        fish.GetComponent<FishiesSwim>().enabled = false;
         fish.name = "fishAnim";
         fish.GetComponent<SortingGroup>().sortingOrder = circleAnim.transform.Find("Layer 5").gameObject.GetComponent<SpriteRenderer>().sortingOrder + 1;
         fish.transform.localScale = new Vector3(2f, 2f, 2f);
 
-        SetBoolByName(fishName);
+        SetBoolByName(useThisFish);
 
         Debug.Log("Saving game...");
         SaveLoad.SaveGame();
