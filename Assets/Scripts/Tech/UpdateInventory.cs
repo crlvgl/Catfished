@@ -44,6 +44,7 @@ public class UpdateInventory : MonoBehaviour
     public possibleNames[] nameOfFish;
     private List<string> fishName = new List<string>();
     public float positionAfterLoad = 0f;
+    private GameObject player;
 
     void Start()
     {
@@ -55,10 +56,13 @@ public class UpdateInventory : MonoBehaviour
             fishName.Add(name.ToString());
             // Debug.Log(fishName);
         }
+
+        player = GameObject.Find("Player");
+
         if (staticBackbone.playedMiniGame)
         {
-            Transform player = GameObject.Find("Player").transform;
-            player.position = new Vector3(positionAfterLoad, player.position.y, player.position.z);
+            Transform playerTransform = player.transform;
+            playerTransform.position = new Vector3(positionAfterLoad, playerTransform.position.y, playerTransform.position.z);
             
             if (staticBackbone.gotFish)
             {
@@ -97,9 +101,15 @@ public class UpdateInventory : MonoBehaviour
                 yield break;
             }
         }
-        GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(waitBeforeAnimation);
         circleAnim.SetActive(true);
+        Animator playerAnim = player.transform.Find("MC-Idle-FINAL").gameObject.GetComponent<Animator>();
+        playerAnim.SetBool("Climb", false);
+        playerAnim.SetBool("Fish", false);
+        playerAnim.SetBool("Idle", false);
+        playerAnim.SetBool("Walk", false);
+        playerAnim.SetBool("Win", true);
         GameObject fish = Instantiate(useThisPrefab, circleAnim.transform.position, Quaternion.identity);
         fish.SetActive(true);
         fish.GetComponent<FishiesSwim>().enabled = false;

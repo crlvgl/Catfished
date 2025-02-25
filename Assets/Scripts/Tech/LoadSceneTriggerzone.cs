@@ -35,7 +35,7 @@ public class LoadSceneTriggerzone : MonoBehaviour
     private Vector3 camPos;
 
     public GameObject player;
-    private Animator anim;
+    public Animator anim;
 
     public bool moveCharacterAfterLoad = false;
     [Tooltip("Move the character after the scene has been loaded to a specific position (e.g. a spawner); float represents the x position")]
@@ -50,7 +50,10 @@ public class LoadSceneTriggerzone : MonoBehaviour
         {
             player = GameObject.Find("Player");
         }
-        anim = player.GetComponent<Animator>();
+        if (anim == null)
+        {
+            anim = player.transform.Find("MC-Idle-FINAL").GetComponent<Animator>();
+        }
     }
 
     void Update()
@@ -75,28 +78,36 @@ public class LoadSceneTriggerzone : MonoBehaviour
             {
                 case Direction.Right:
                     player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x + 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
-                    anim.enabled = true;
-                    anim.SetBool("Clip", false);
+                    anim.SetBool("Climb", false);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", false);
                     anim.SetBool("Walk", true);
+                    anim.SetBool("Win", false);
                     break;
                 case Direction.Left:
                     player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x - 20, player.transform.position.y, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
-                    anim.enabled = true;
-                    anim.SetBool("Clip", false);
+                    anim.SetBool("Climb", false);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", false);
                     anim.SetBool("Walk", true);
+                    anim.SetBool("Win", false);
                     player.transform.rotation = Quaternion.Euler(0, 180, 0);
                     break;
                 case Direction.Up:
                     player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x, player.transform.position.y + 20, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
-                    anim.enabled = true;
-                    anim.SetBool("Walk", false);
                     anim.SetBool("Climb", true);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", false);
+                    anim.SetBool("Walk", false);
+                    anim.SetBool("Win", false);
                     break;
                 case Direction.Down:
                     player.transform.position = Vector3.MoveTowards(player.transform.position, new Vector3(player.transform.position.x, player.transform.position.y - 20, player.transform.position.z), player.GetComponent<PlayerMovement>().speed * Time.deltaTime);
-                    anim.enabled = true;
-                    anim.SetBool("Walk", false);
                     anim.SetBool("Climb", true);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", false);
+                    anim.SetBool("Walk", false);
+                    anim.SetBool("Win", false);
                     break;
             }
             cam.transform.position = camPos;

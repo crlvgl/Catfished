@@ -101,6 +101,12 @@ public class GetFishOnce : MonoBehaviour
         GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
         yield return new WaitForSeconds(waitBeforeAnimation);
         circleAnim.SetActive(true);
+        Animator playerAnim = GameObject.Find("Player").transform.Find("MC-Idle-FINAL").gameObject.GetComponent<Animator>();
+        playerAnim.SetBool("Climb", false);
+        playerAnim.SetBool("Fish", false);
+        playerAnim.SetBool("Idle", false);
+        playerAnim.SetBool("Walk", false);
+        playerAnim.SetBool("Win", true);
         GameObject fish = Instantiate(fishPrefab, circleAnim.transform.position, Quaternion.identity);
         fish.SetActive(true);
         fish.GetComponent<FishiesSwim>().enabled = false;

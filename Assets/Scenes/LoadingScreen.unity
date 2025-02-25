@@ -286,7 +286,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pathToScene: 
-  waitTime: 3
+  waitTime: 2
 --- !u!4 &462093869
 Transform:
   m_ObjectHideFlags: 0

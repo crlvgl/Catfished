@@ -8,6 +8,7 @@ public class ScoreFB : MonoBehaviour
     public TMP_Text scoreText;
     public TMP_Text timerText;
     public TMP_Text gameOverText;
+    public TMP_Text continueText;
     private float elapsedTime = 0f;
     private int minutes = 0;
     private int seconds = 0;
@@ -49,10 +50,12 @@ public class ScoreFB : MonoBehaviour
 
             timerText.text = string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds) + "s";
             gameOverText.text = "";
+            continueText.text = "";
         }
         else
         {
-            gameOverText.text = "Game Over!\nScore: " + score + "pts\nTime: " + string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds) + "s\npress 'e' to continue";
+            gameOverText.text = "Game Over!\nScore: " + score + "pts\nTime: " + string.Format("{0:00}:{1:00}:{2:000}", minutes, seconds, milliseconds) + "s";
+            continueText.text = "press 'e' to continue";
             scoreText.text = "";
             timerText.text = "";
         }

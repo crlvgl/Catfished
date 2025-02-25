@@ -750,7 +750,8 @@ MonoBehaviour:
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
-  player: {fileID: 0}
+  player: {fileID: 1732060956}
+  anim: {fileID: 1732060955}
   moveCharacterAfterLoad: 1
   playerPositionAfterLoad: -2
 --- !u!61 &312686775
@@ -1663,7 +1664,8 @@ MonoBehaviour:
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
-  player: {fileID: 0}
+  player: {fileID: 1732060956}
+  anim: {fileID: 1732060955}
   moveCharacterAfterLoad: 0
   playerPositionAfterLoad: 0
 --- !u!61 &545685381
@@ -2220,8 +2222,8 @@ Transform:
   m_GameObject: {fileID: 753492730}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 10.9643, y: 1.1828, z: 0}
-  m_LocalScale: {x: 3.9915, y: 9.025459, z: 1}
+  m_LocalPosition: {x: 10.9643, y: -0.9985, z: 0}
+  m_LocalScale: {x: 3.9915, y: 4.6625524, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 565817040}
@@ -2631,23 +2633,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: dae6924dc9b6d234b9b4e114517a7164, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: dae6924dc9b6d234b9b4e114517a7164, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: dae6924dc9b6d234b9b4e114517a7164, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: dae6924dc9b6d234b9b4e114517a7164, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8734
+      value: -2.55
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: dae6924dc9b6d234b9b4e114517a7164, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1396
+      value: 0.481
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: dae6924dc9b6d234b9b4e114517a7164, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3023,7 +3025,8 @@ MonoBehaviour:
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
-  player: {fileID: 0}
+  player: {fileID: 1732060956}
+  anim: {fileID: 1732060955}
   moveCharacterAfterLoad: 1
   playerPositionAfterLoad: -4.58
 --- !u!61 &1007388825
@@ -3349,7 +3352,7 @@ MonoBehaviour:
   loadingScreenPath: Assets/Scenes/LoadingScreen.unity
   pressedKey: 32
   waitTime: 1
-  moveCharacter: 1
+  moveCharacter: 0
   moveCharacterDirection: 3
   restraintCollider:
   - {fileID: 1004703131}
@@ -3360,7 +3363,8 @@ MonoBehaviour:
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
-  player: {fileID: 0}
+  player: {fileID: 1732060956}
+  anim: {fileID: 1732060955}
   moveCharacterAfterLoad: 1
   playerPositionAfterLoad: 2.902
 --- !u!61 &1171845456
@@ -3617,13 +3621,13 @@ MonoBehaviour:
   waitTime: 1
   moveCharacter: 0
   moveCharacterDirection: 0
-  restraintCollider:
-  - {fileID: 0}
+  restraintCollider: []
   fadeToBlack: 1
   timeBeforeFade: 0.3
   blackScreen: {fileID: 1874528448}
   fadeSpeed: 1
-  player: {fileID: 0}
+  player: {fileID: 1732060956}
+  anim: {fileID: 1732060955}
   moveCharacterAfterLoad: 1
   playerPositionAfterLoad: 9.717
 --- !u!61 &1218420893
@@ -4420,8 +4424,8 @@ Transform:
   m_GameObject: {fileID: 1472306810}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.9817, y: 1.1828, z: 0}
-  m_LocalScale: {x: 3.9566028, y: 9.025459, z: 1}
+  m_LocalPosition: {x: -10.9817, y: -1.2266, z: 0}
+  m_LocalScale: {x: 3.9566028, y: 4.2067666, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 565817040}
@@ -4908,6 +4912,16 @@ PrefabInstance:
       addedObject: {fileID: 1765757792}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
+--- !u!95 &1732060955 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 3782217157849755744, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
+  m_PrefabInstance: {fileID: 1732060953}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1732060956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4736315110145856826, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
+  m_PrefabInstance: {fileID: 1732060953}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1765757789 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -2253911629886400664, guid: 30d8d649d5ae8684387622bc62b3a72a, type: 3}

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: 862c887488e0ca34dae75ddffa8e4cef, type: 3}
       propertyPath: m_Name
-      value: retroTretris
+      value: retroTetris
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 862c887488e0ca34dae75ddffa8e4cef, type: 3}
       propertyPath: m_LocalScale.x

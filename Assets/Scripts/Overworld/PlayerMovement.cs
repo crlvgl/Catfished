@@ -19,13 +19,19 @@ public class PlayerMovement : MonoBehaviour
     private bool ladderExists;
     private Ladder ladder;
 
-    private Animator anim;
+    public Animator anim;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        anim = GetComponent<Animator>();
-        anim.enabled = false;
+        if (phone == null)
+        {
+            phone = Camera.main.transform.Find("Smartphone").gameObject;
+        }
+        if (anim == null)
+        {
+            anim = this.transform.Find("MC-Idle-FINAL").GetComponent<Animator>();
+        }
 
         body = GetComponent<Rigidbody2D>();
         ladderExists = GameObject.Find("Ladder") != null;
@@ -52,41 +58,53 @@ public class PlayerMovement : MonoBehaviour
             {
                 if (ladder.isOnLadder && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S)))
                 {
-                    anim.enabled = true;
-                    anim.SetBool("Walk", false);
-                    anim.SetBool("Fish", false);
                     anim.SetBool("Climb", true);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", false);
+                    anim.SetBool("Walk", false);
+                    anim.SetBool("Win", false);
                 }
                 else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
                 {
-                    anim.enabled = true;
-                    anim.SetBool("Walk", true);
-                    anim.SetBool("Fish", false);
                     anim.SetBool("Climb", false);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", false);
+                    anim.SetBool("Walk", true);
+                    anim.SetBool("Win", false);
                 }
                 else
                 {
-                    anim.enabled = false;
+                    anim.SetBool("Climb", false);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", true);
+                    anim.SetBool("Walk", false);
+                    anim.SetBool("Win", false);
                 }
             }
             else
             {
                 if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
                 {
-                    anim.enabled = true;
-                    anim.SetBool("Walk", true);
+                    anim.SetBool("Climb", false);
                     anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", false);
+                    anim.SetBool("Walk", true);
+                    anim.SetBool("Win", false);
                 }
                 else
                 {
-                    anim.enabled = false;
+                    anim.SetBool("Climb", false);
+                    anim.SetBool("Fish", false);
+                    anim.SetBool("Idle", true);
+                    anim.SetBool("Walk", false);
+                    anim.SetBool("Win", false);
                 }
             }
             if (Input.GetKeyDown(KeyCode.A))
             {
                 this.transform.rotation = Quaternion.Euler(0, 180, 0);
             }
-            else if (Input.GetKeyUp(KeyCode.A))
+            else if (Input.GetKeyDown(KeyCode.D))
             {
                 this.transform.rotation = Quaternion.Euler(0, 0, 0);
             }
