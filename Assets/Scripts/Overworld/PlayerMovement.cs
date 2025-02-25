@@ -70,6 +70,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Fish", false);
                     anim.SetBool("Idle", false);
                     anim.SetBool("Walk", true);
+                    SoundEffectManager.Play("Walk");
                     anim.SetBool("Win", false);
                 }
                 else
@@ -89,6 +90,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Fish", false);
                     anim.SetBool("Idle", false);
                     anim.SetBool("Walk", true);
+                    SoundEffectManager.Play("Walk");
                     anim.SetBool("Win", false);
                 }
                 else
