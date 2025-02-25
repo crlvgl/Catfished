@@ -12,7 +12,7 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: Mola Studios
+  companyName: Mola Studios x Once Team
   productName: Catfished
   defaultCursor: {fileID: -8328923581568760697, guid: 0f6eb72c1213f4e4baf75e9a2955b8a7, type: 3}
   cursorHotspot: {x: 0, y: 0}
@@ -29,10 +29,10 @@ PlayerSettings:
   m_SplashScreenBackgroundPortraitAspect: 1
   m_SplashScreenBackgroundLandscapeUvs:
     serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
+    x: 0.0078125
+    y: 0.015625
+    width: 0.625
+    height: 0.703125
   m_SplashScreenBackgroundPortraitUvs:
     serializedVersion: 2
     x: 0
@@ -41,6 +41,8 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: 549336fe770fab74b9d7be67e42b0f8b, type: 3}
+    duration: 3
+  - logo: {fileID: 3595687093223262609, guid: 186f8d57b3f774f48b8846a75e49f318, type: 3}
     duration: 3
   m_VirtualRealitySplashScreen: {fileID: 0}
   m_HolographicTrackingLossScreen: {fileID: 0}
@@ -166,7 +168,7 @@ PlayerSettings:
   androidMaxAspectRatio: 2.4
   androidMinAspectRatio: 1
   applicationIdentifier:
-    Standalone: com.MolaStudios.Catfished
+    Standalone: com.MolaOnce.Catfished
   buildNumber:
     Standalone: 0
     VisionOS: 0
@@ -594,9 +596,9 @@ PlayerSettings:
   ps4IncludedModules: []
   ps4attribVROutputEnabled: 0
   monoEnv: 
-  splashScreenBackgroundSourceLandscape: {fileID: 0}
+  splashScreenBackgroundSourceLandscape: {fileID: -6335318280706120853, guid: 186f8d57b3f774f48b8846a75e49f318, type: 3}
   splashScreenBackgroundSourcePortrait: {fileID: 0}
-  blurSplashScreenBackground: 1
+  blurSplashScreenBackground: 0
   spritePackerPolicy: 
   webGLMemorySize: 32
   webGLExceptionSupport: 1
