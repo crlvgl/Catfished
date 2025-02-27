@@ -22,10 +22,14 @@ public class SoundRandomiser : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.S))
         {
-            source.clip = sounds[Random.Range(0, sounds.Length)];
-            source.volume = Random.Range(1 - volumeChangeMultiplier, 1);
-            source.pitch = Random.Range(1 - pitchChangeMultiplier, 1 + pitchChangeMultiplier);
-            source.PlayOneShot(source.clip);
+          
         }
+    }
+    public void RandomiseFootstep()
+    {
+        source.clip = sounds[Random.Range(0, sounds.Length)];
+        source.volume = Random.Range(1 - volumeChangeMultiplier, 1);
+        source.pitch = Random.Range(1 - pitchChangeMultiplier, 1 + pitchChangeMultiplier);
+        source.PlayOneShot(source.clip);
     }
 }

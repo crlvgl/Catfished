@@ -66,6 +66,7 @@ public class GetFishOnce : MonoBehaviour
         if (canBeActive && Input.GetKeyDown(actionKey))
         {
             StartCoroutine(GetFish());
+            SoundEffectManager.Play("Reward", false, 0.5f);
         }
     }
     

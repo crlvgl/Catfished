@@ -82,7 +82,9 @@ public class LoadMinigame : MonoBehaviour
             player.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
         anim.SetBool("Fish", true);
+        SoundEffectManager.Play("Swish", true, 1.5f);
         yield return new WaitForSeconds(7.5f);
+        SoundEffectManager.Play("Blub", false, 0f);
         StartCoroutine(MoveScreen());
     }
 

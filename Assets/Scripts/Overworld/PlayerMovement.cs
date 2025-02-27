@@ -21,6 +21,10 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator anim;
 
+    private bool playingFootsteps = false;
+
+    public float footstepSpeed = 0.01f;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -62,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Fish", false);
                     anim.SetBool("Idle", false);
                     anim.SetBool("Walk", false);
+                    StopFootsteps();
                     anim.SetBool("Win", false);
                 }
                 else if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
@@ -70,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Fish", false);
                     anim.SetBool("Idle", false);
                     anim.SetBool("Walk", true);
-                    SoundEffectManager.Play("Walk");
+                    // SoundEffectManager.Play("Walk");
                     anim.SetBool("Win", false);
                 }
                 else
@@ -90,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
                     anim.SetBool("Fish", false);
                     anim.SetBool("Idle", false);
                     anim.SetBool("Walk", true);
-                    SoundEffectManager.Play("Walk");
+                    // SoundEffectManager.Play("Walk");
                     anim.SetBool("Win", false);
                 }
                 else
@@ -114,6 +119,16 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(pauseKey))
         {
             open = true;
+        }
+
+        //Start footstep soundeffect
+        if(body.linearVelocity.magnitude > 0 && !playingFootsteps)
+        {
+            StartFootsteps();
+        }
+        else if(body.linearVelocity.magnitude == 0)
+        {
+            StopFootsteps();
         }
     }
 
@@ -153,5 +168,22 @@ public class PlayerMovement : MonoBehaviour
             pauseMenu.SetActive(!pauseMenu.activeSelf);
             open = false;
         }
+    }
+
+    void StartFootsteps()
+    {
+        playingFootsteps = true;
+        InvokeRepeating(nameof(PlayFootstep), 0f, footstepSpeed);
+    }
+
+    void StopFootsteps()
+    {
+        playingFootsteps = false;
+        CancelInvoke(nameof(PlayFootstep));
+    }
+
+    void PlayFootstep()
+    {
+        SoundEffectManager.Play("Walk", true);
     }
 }
