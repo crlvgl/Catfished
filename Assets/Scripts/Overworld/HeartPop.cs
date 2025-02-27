@@ -46,6 +46,7 @@ public class HeartPop : MonoBehaviour
     {
         isPlaying = true;
         heart.SetActive(true);
+        SoundEffectManager.Play("Pling", false);
         yield return new WaitForSeconds(heartAnim.GetCurrentAnimatorStateInfo(0).length);
         heart.SetActive(false);
         isPlaying = false;
