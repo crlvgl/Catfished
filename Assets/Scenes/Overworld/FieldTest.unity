@@ -5030,6 +5030,10 @@ PrefabInstance:
       propertyPath: pauseMenu
       value: 
       objectReference: {fileID: 8614779987686459154}
+    - target: {fileID: 7717419098956054460, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
+      propertyPath: footstepSpeed
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8860275622942884201, guid: e8b238b6e49df0647bee38ae663c1a61, type: 3}
       propertyPath: m_Color.a
       value: 0
@@ -5293,7 +5297,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   backgroundMusic: {fileID: 8300000, guid: 0cd02e0939e5a534482804da1e01ccb9, type: 3}
-  musicSlider: {fileID: 0}
 --- !u!1 &1821239997
 GameObject:
   m_ObjectHideFlags: 0

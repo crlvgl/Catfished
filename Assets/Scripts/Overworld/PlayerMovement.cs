@@ -23,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
 
     private bool playingFootsteps = false;
 
-    public float footstepSpeed = 0.01f;
+    public float footstepSpeed = 0.5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
